@@ -1,0 +1,119 @@
+\section{Zielsetzung}
+Im folgenden Versuch wird anhand der Methode der Aktivierung mit Neutronen die Halbwertszeit von zwei verschiedenen Nukliden bestimmt.
+
+\section{Theorie}
+Bei der Aktivierung mit Neutronen handelt es sich um einen Versuch mit radioaktiven Zerfällen.
+Dabei zerfallen instabile Atomkerne in stabile Atomkerne. 
+Stabile Nuklide zeichnen sich durch ein festes Verhältnis von Neutronen und Protonen aus.
+Des Weiteren kann die Zerfallswahrscheinlichkeit der instabilen Nuklide durch die Halbwertszeit ausgedrückt werden, die angibt in welcher Zeitspanne von einer bestimmten Menge instabiler Nuklide noch die Hälfte vorhanden ist.
+
+\subsection{Kernreaktion mit Neutronen}
+Zur Erzeugung von instabilen Nukliden werden stabile Nuklide mit Neutronen beschossen.
+Dabei müssen die Neutronen das Coulomb-Potential des Kerns nicht überwinden und brauchen somit weniger Energie.
+ 
+Grundlegend wird also ein Kern A durch Beschuss eines Neutrons zum Zerfall angeregt.
+Zunächst fusionieren dabei der Ausgangskern A mit einem Neutron, wodurch der Kern in einen höheren Energiezustand A*, der auch als Zwischenkern bezeichnet wird, wechselt.
+Um in den Grundzustand zu wechseln wird Energie in Form eines $\gamma$-Quants frei.
+Die Reaktion
+\begin{equation}
+    \label{eq:1}
+    _{z}^{m} \text{A} + _{0}^{1} \text{n} \rightarrow _{z}^{m+1} \text{A*} \rightarrow _{z}^{m+1} \text{A} + \gamma \notag
+\end{equation}
+bringt aber einen meist instabilen Kern hervor, da das Verhältnis zwischen der Kernladungszahl und der Ordnungszahl verändert wurde.
+
+Dabei ist der entstandene Kern langlebiger als der Zwischenkern, wandelt sich aber aufgrund seiner Instabilität durch Emission eines Elektrons in einen stabilen Kern nach
+\begin{equation}
+    \label{eq:2}
+    _{z}^{m+1} \text{A} \rightarrow _{z+1}^{m+1} \text{B} + \beta^{-} + E_\text{kin} + \overline{\nu}_e 
+\end{equation}
+um. Dabei ist $\overline{\nu}_e$ ein Antineutrino und die kinetische Energien des Elektrons und des Antineutrinos $E_\text{kin}$ der Massendefekt
+\begin{equation}
+  \Delta E = \Delta m c^2, \notag
+\end{equation}
+der sich aus der Massendifferenz $\Delta m$ der beiden Kerne A und B ergibt.
+
+\subsection{Schnelle und langsame Neutronen}
+Zusätzlich muss die Wahrscheinlichkeit für den Einfang eines Neutrons durch einen stabilen Kern berücksichtig werden.
+Dabei wird der sogenannte Wirkungsquerschnitt $\sigma$ definiert, der die Fläche beschreibt, die der Kern haben müsste um jedes auftreffende Neutron eingefangen werden würde.
+Es gilt bei einem Beschuss von $n$ Neutronen pro Sekunde und $u$ Einfängen auf eine $\SI{1}{cm^2}$ Fläche einer dünnen Folie 
+\begin{equation}
+    \sigma = \frac{u}{n K d},    \notag
+\end{equation} 
+wobei $d$ die Dicke der Folie und $K$ die Anzahl der Atome pro Volumen angibt.
+Der Wirkungsquerschnitt wird in barn angegeben wobei $1\text{barn} = 10^{-24}\text{cm}^2$ ist.
+Dabei ist $\sigma$ stark geschwindigkeitsabhängig.
+Dazu wird mittels der De-Broglie-Wellenlänge
+\begin{equation}
+    \lambda = \frac{h}{m_n v}   \notag
+\end{equation}
+zwischen langsamen und schnellen Neutronen differenziert.
+Dabei gilt bei hohen Geschwindigkeiten, also bei kleinen Wellenlängen gegen den Kernradius, dass es über geometrische Überlegungen zur Streuung kommt.
+Bei niedrigen Geschwindigkeiten hingegen ist aufgrund des Verhältnisses von Wellenlänge zum Kernradius der Verlgleich zur geometrischen Optik nicht anwendbar.
+Es treten bei bestimmten Neutronengeschwindigkeiten Maxima des Wirkungsquerschnitts auf, weil es zur Resonanzabsorption kommt.
+Die Energie der Neutronen entspricht dann der Differenz zweier Energieniveaus des Zwischenkerns.
+Der Wirkungsquerschnitt wird nach Breit und Wigner dann nach
+\begin{equation}
+    \sigma (E) = \sigma_0 \sqrt{\frac{E_\text{r}}{E}} \frac{\tilde{c}}{(E-E_\text{r})^2 + \tilde{c}}    \notag
+\end{equation}
+bestimmt, wobei $\tilde{c}$ und $\sigma_0$ charakteristische Grö\ss{}en für die ablaufende Kernreaktion sind.
+Falls die Energie des Neutrons gleich der Energie des Niveaus ist, wird der Term maximal.
+Mit der weiteren Annahme $E<<E_r$ ergeben sich die reziproken Proportionalitäten
+\begin{equation}
+    \sigma \propto \frac{1}{\sqrt{E}} \propto \frac{1}{v}.
+\end{equation}
+Somit werden die langsamen Neutronen mit einer höheren Wahrscheinlichkeit absorbiert als schnelle Neutronen.
+
+\subsection{Erzeugung langsamer Neutronen}
+Da Neutronen aufgrund ihrer Instabilität nicht in der Natur vorkommen, werden sie durch den Beschuss von $\alpha$-Strahlung auf $^{9} \text{Be}$ erzeugt.
+Dabei stammt die $\alpha$-Strahlung aus dem Zerfall von $^{226} \text{Ra}$.
+Somit folgt die Reaktionsgleichung
+\begin{equation}
+    _{4}^{9} \text{Be} + _{2}^{4} \text{\alpha} \rightarrow _{6}^{12} \text{C} _{0}^{1} \text{n},    \notag
+\end{equation}
+wobei die hier entstehenden Neutronen ein breites kontinuierliches Energiespektrum bis zu $\SI{13,7}{Mev}$ aufweisen.
+Die Neutronen werden durch dicke Materieschichten geleitet, wodurch elastische Stö\ss{}e dann zur Abbremsung führen.
+Dabei ist die Wirkung der Verlangsamung maximal, wenn sich die Massen der beiden Sto\ss{}partner, also die der Neutronen und der Atome der Materieschicht, nicht unterscheiden.
+Am besten geeignet dafür ist Wasserstoff.
+Somit ergibt sich durch mehrfache Stö\ss{} eine mittlere kinetische Energie von $\SI{0,025}{eV}$ bei einer Temperatur von $\SI{290}{K}$.
+Das ergibt eine mittlere Geschwindigkeit für die sogenannten thermischen Neutronen von $\SI{2,2}{\frac{km}{s}}$.
+
+\subsection{Der Zerfall instabiler Isotope}
+Die Proben werden nach Gleichung \ref{eq:1} zunächst durch den Beschuss mit Neutronen zu einem instabilen Atom angeregt.
+Dann zerfällt der instabile Kern nach Gleichung \ref{eq:2} durch die $\beta^{-}$-Strahlung in einen stabilen Zustand.
+Für Indium ergibt sich
+\begin{equation}
+    _{49}^{115} \text{In} + _{0}^{1} \text{n} \rightarrow _{116}^{49} \text{In} \rightarrow _{116}^{50} \text{Sn} + \beta^{-} + \overline{\nu}_e.   \notag
+\end{equation}
+Für Silber ergeben sich aufgrund der Tatsache, dass natürliches Silber aus zwei Isotopen besteht die Reaktionsgleichungen
+\begin{equation}
+    _{47}^{107} \text{Ag} + _{0}^{1} \text{n} \rightarrow _{47}^{108} \text{Ag} \rightarrow _{48}^{108} \text{Cd} + \beta^{-} + \overline{\nu}_e  \notag
+\end{equation}
+und 
+\begin{equation}
+    _{47}^{109} \text{Ag} + _{0}^{1} \text{n} \rightarrow _{47}^{110} \text{Ag} \rightarrow _{48}^{110} \text{Cd} + \beta^{-} + \overline{\nu}_e.  \notag
+\end{equation}
+
+Nach dem allgemeinen Zerfallsgesetz
+\begin{equation}
+    N(t) = N_0 \text{e}^{-\lambda t},   \notag
+\end{equation}
+wobei $\lambda$ die Zerfallskonstante und $N_0$ die Anzahl der instabilen Kerne ist.
+Die Halbwertszeit $T$ beschreibt die Zeit, nach der die Hälfte der instabilen Kerne zerfallen ist.
+Nach
+\begin{equation}
+    \label{eq:3}
+    \frac{1}{2} N_0 = N_0 \text{e}^{-\lambda T} \leftrightarrow T = \text{ln}\left(\frac{2}{\lambda}\right)
+\end{equation}
+lässt sich die Halbwertszeit bestimmen.
+Praktisch lässt sich die Halbwertszeit aber besser durch die Betrachtung von $N(t)$ in einem Zeitintervall $\Delta t$ bestimmen.
+Dann ergibt sich zunächst
+\begin{equation}
+    N_{\Delta t} (t) = N(t) - N(t + \Delta t)  \notag
+\end{equation}
+woraus sich durch Umformungen die Zerfallskonstante $\lambda$ mittels lineare Regression nach
+\begin{equation}
+\label{eq:4}
+    \text{ln}(N_{\Delta_t}) = \text{ln}(N_0 (1 - \text{e}^{-\lambda \Delta t})) - \lambda t.
+\end{equation}
+Dabei ist $\text{ln}(N_0 (1 - \text{e}^{-\lambda \Delta t}))$ konstant und $\lambda$ gibt die Steigung die Geraden an.
+Es sollte darauf geachtet werden, dass $\Delta t$ in einem gewissen Rahmen liegt, da es bei zu kleinen Zeitintervallen zu statistischen und bei zu gro\ss{}en Zeitintervallen zu systematischen Fehlern kommt.

@@ -1,0 +1,114 @@
+\section{Theorie}
+
+\subsection{gedämpfte Schwinungen}
+
+Wird einem Schwingkreis mit Kapazität $C$ und einer Induktivität $L$ der Strom $I(t)$ zugeführt, schwingt dieser ungedämpft, es handelt sich also von eine gedämpften Schwingung.
+Wird diesem Schwingkreis nun ein Widerstand $R$ zugeschaltet, so wird die Schwingung gedämpft, da kontinuierlich Energie über den Widerstand in Wärme umgewandelt wird, weshalb fortlaufend die elektrische Energie im Schwingkreis abnimmt.
+\begin{figure}[h]
+  \centering
+  \includegraphics[height=4cm]{Grafiken/Gedämpft.pdf}
+  \caption{Gedämpfter Schwingkreis. \cite{1}}
+  \label{fig:Gedämpft}
+\end{figure}
+// 
+Für diesen gedämpften Schwingkreis gilt somit nach dem 2. Kirchhoffschen Gesetz
+\begin{equation}
+	U_R(t) + U_C(t) + U_L(t) = 0
+\end{equation}
+Es ergeben sich die Beziehungen
+\begin{gather}
+	U_R(t) = R\cdot I (t) \\
+	U_C(t) = \frac{Q(t)}{C}\\
+	U_L(t) = L\frac{dI}{dt}\\
+	I =\frac{dQ}{dt}
+\end{gather}
+ Q(t) beschreibt die Ladung auf dem Kondensator.
+ Somit kann die folgende DGL aufgestellt werden
+ \begin{equation}
+ 	\frac{d^2 I}{dt^2} + \frac{R}{L}\frac{dI}{dt} + \frac{1}{LC} I = 0
+\end{equation}
+Durch Lösung dieser Differentialgleichung 2. Ordnung im Falle $!/LC > \frac{R^2}{4L^2}$ ergibt sich die Gleichung einer gedämpften Schwingung mit 
+\begin{gather}
+	\nu = \frac{1}{2\pi} \cdot \sqrt{\frac{1}{LC}-\frac{R^2}{4L^2}}\\
+	\mu = \frac{1}{2\pi}\frac{r}{2L}
+\end{gather}
+zu
+\begin{equation}
+	I(t) = A_0e^{2\pi \mu t}cos(2\pi \nu t + \eta)
+\end{equation}
+Die Schwingungsdauer ist dabei
+\begin{equation}
+	T = \frac{1}{\nu} = \frac{2\pi}{\sqrt{\frac{1}{LC}-\frac{R^2}{4L^2}}}
+\end{equation}
+Nachdem die Amplitude auf den e-ten Teil des Ursprungswertes gesunken ist ergibt sich
+\begin{equation}
+	T_\text{ex} = \frac{1}{2\pi \mu} = \frac{2L}{R}
+\end{equation}
+\\
+Im Falle von $\frac{1}{LC} < \frac{R^2}{4L^2}$, also $\nu$ imaginär, ergibt sich 
+\begin{equation}
+	I(t) \propto \Bigl[-\Bigl(\frac{R}{2L}-\sqrt{\frac{R^2}{4L^2} - \frac{1}{LC}}\Bigr)t\Bigr]
+\end{equation}
+Ein Sonderfall hierbei ist der aperiodische Grenzfall. Hier geht I(t) am schnellsten gegen null.
+Dies ist der Fall wenn 
+\begin{equation}
+	\frac{1}{LC} = \frac{R_\text{ap}^2}{4L^2}
+\end{equation}
+gilt. Für die Stromstärke gilt dann
+\begin{equation}
+	I(t) = Ae^{-\frac{R}{2L}\cdot t} = Ae^{-\frac{t}{\sqrt{LC}}}
+\end{equation}
+
+\subsection{erzwungene Schwingungen}
+
+Dem zuvor beschriebenen Schwingkreis wird nun eine sinusförmige Wechselspannung $U(t)$ zugeführt, was dazu führt, dass dem System eine Frequenz (der Sinusspannung) aufgezwungen wird.
+\begin{figure}[H]
+  \centering
+  \includegraphics[height=3.5cm]{Grafiken/Erzwungen.pdf}
+  \caption{Erzwungene Schwingung durch Sinusspannung.\cite{1}}
+  \label{fig:Erzwungen}
+\end{figure}
+
+Für $U(t)$ ergibt sich
+\begin{equation}
+	U(t) = U_0 e^{i\omega t}
+\end{equation}
+Aus (1) wird dann 
+\begin{equation}
+	LC\frac{d^2U_C}{dt^2} + RC\frac{dU_C}{dt} + U_C = U_0e^{i\omega t}
+\end{equation}
+Die Lösung der Differentialgleichung ergibt
+\begin{equation}
+	U = \frac{U_0(1-LC\omega^2-i\omega RC)}{(1-LC\omega^2)^2+\omega^2R^2C^2}
+\end{equation}
+Die Phase wird beschrieben mit
+\begin{equation}
+	\varphi(\omega) = arctan\Bigl(\frac{-\omega RC}{1-LC\omega^2}\Bigr)
+\end{equation}
+In Abhängigkeit von $\omega$ ergibt sich für die Kondensatorspannung $U_C$
+\begin{equation}
+	U_C(\omega)=\frac{U_0}{\sqrt{(1-LC\omega^2)^2+\omega^2R^2C^2}}
+\end{equation}
+Diese  Gleichung beschreibt die Resonanzkurve. 
+Erreicht $U_C$ bei einer bestimmten Frequenz einen Wert, der größer ist als $U_0$, so wird von Resonanz gesprochen.
+Die Resonanzfrequenz lässt sich berechnen mit
+\begin{equation}
+	w_{\text{res}}=\sqrt{\frac{1}{LC}-\frac{R^2}{2L^2}}
+\end{equation}
+Im Falle von schwacher Dämpfung, also $\frac{R^2}{2L^2}<<\frac{1}{LC}$, nähert sich $\omega_\text{res}$ $\omega_0$ der ungedämpften Schwingung. $U_C$ wird somit größer als $U_0$:
+\begin{equation}
+	U_\text{C,max}=\frac{1}{\omega_0RC}U_0=\frac{1}{R}\sqrt{\frac{L}{C}}U_0
+\end{equation}
+Der Faktor $\frac{1}{\omega_0RC}$ beschreibt die Resonanzüberhöhung oder Güte q.
+\\
+Im Falle starker Dämpfung, also $\frac{R^2}{2L^2} >> \frac{1}{LC}$, geht $U_C$, vom Wert $U_0$ aus monoton gegen 0.
+\\
+Die Abhängigkeit der Phasen zwischen Erreger- und Kondensatorspannung zur Frequenz lässt sich beschreiben mit
+\begin{equation}
+	\omega_1 - \omega_2 = \frac{R}{L}
+\end{equation}
+wobei für $\omega_\text{1,2}$ gilt:
+\begin{equation}
+	\omega_\text{1,2}=\pm \frac{R}{2L} + \sqrt{\frac{R^2}{4L^2}+\frac{1}{LC}}
+\end{equation}
+\newpage

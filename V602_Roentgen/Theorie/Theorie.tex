@@ -1,0 +1,48 @@
+\section{Zielsetzung}
+
+Anhand des folgenden Versuches soll das Emissionsspektrum einer Cu-Röntgenröhre analysiert, sowie verschiedene Absorptionsspektren aufgenommen werden.
+
+\section{Theorie}
+\label{sec:Theorie}
+
+Zur Erzeugung von Röntgenstrhalen wird eine evakuierte Röhre verwendet. Elektronen aus einer Glühkathode werden zu einer Anode hin beschleunigt. Beim Auftreffen entsteht dann besagte Röntgenstrahlung. Diese lässt sich in zwei Komponenten aufteilen. Die Bremsstrahlung, welche für das kontinuierliche Bremsspektrum verantwortlich ist, entsteht durch das Abbremsen des Elektrons im Coulombfeld des Atomkerns. Dabei wird ein Photon ausgesendet, ein Röntgenquant. Seine Energie ist gleich dem Energieverlust des Elektrons. Da das Elektron aber nur einen Teil seiner Energie abgibt, dieser Wert jedoch variieren kann, entsteht ein kontinuierliches Spektrum. Daraus ergibt sich die maximale Energie, bzw. die minimale Wellenlänge:
+\begin{equation}
+\label{eq:1}
+	\lambda_\text{min} = \frac{h \cdot c}{e_0 U}  .
+\end{equation}
+Hierbei wird das Elektron vollständig abgebremst und die kinetische Energie $E = e_0U$ ist komplett in Strahlungsenergie $E = hv$ umgewandelt. \*
+Das charakteristische Spektrum ergibt sich hingegen aus der Ionisation des Anodenmaterials. Dabei entsteht in der inneren Schale eine freie Stelle für ein Elektron aus der höheren Schicht. Rutscht dieses nun nach, wird dabei ein Röntgenquant emittiert. Die Energie des ausgesendeten Photons ist dabei $hv = E_\text{m} - E_\text{n}$, die Energiedifferenz der beiden Schalen. Somit besteht das charakteristische Spektrum aus einzelnen, scharfen Linien. Diese sind charakteristisch für das jeweilige Anodenmaterial. Die genannten Linien werden mit K, L, M, ... bezeichnet, entsprechend der Übergangs-Schalen.
+Die Bindungsenergie $E_\text{n}$, welche ein Elektron auf der n-ten Schale besitzt gilt
+\begin{equation}
+\label{eq:2}
+	E_\text{n} = -R_\infty z_\text{eff}^2 \cdot \frac{1}{n^2}  .
+\end{equation}
+Durch die effektive Kernladung $z_\text{eff} = z - \sigma$ wird der Abschirmeffekt berücksichtigt. $R_\infty = 13.6 \text{eV}$ ist die Rydbergenergie.
+Die Coulombanziehung auf äußere Elektronen ist verringert, da in einem Mehrelektronatom die Hüllenelektronen und die Wechselwirkung der Elektronen die Kernladung abschirmen. \*
+Jede charakteristische Linie ist meist von mehreren kleinen Linien umgeben. Diese Erscheinung wird Feinstruktur genannt. Sie entsteht aufgrund des Bahndrehimpulses und des Elektronenspins, durch welchen nicht alle Elektronen dieselbe Bindusenergie besitzen. Im folgenden Versuch kann die Feinstruktur jedoch nicht beobachtet werden. 
+\\
+Bei der Absorption dominieren der Photoeffekt und der Comptoneffekt, sofern die Energie unter 1 MeV liegt. 
+\begin{figure}[h]
+    \centering
+    \includegraphics[height=6cm]{Theorie/T1.pdf}
+    \caption{Absorptionskanten L und K im Absorptionsverlauf \cite{1}.}
+    \label{fig:T1}
+\end{figure}
+In Abbildung \ref{fig:T1} ist die Absorptionskante zu erkennen. Diese tritt auf, wenn die Photonenenergie gerade größer als die Bindungsenergie des Elektrons auf der nächsten inneren Schale ist. Die Kante $hv_\text{abs} = E_\text{n} - E_\text{m}$ liegt dabei ca. an derselben Stelle wie die Bindungsenergie des Elektrons. \*
+Die Bindungsenergie kann mithilfe der Sommerfeldschen Feinstruktur errechnet werden:
+\begin{equation}
+\label{eq:3}
+	E_\text{n,j} = - R_{\infty} \left(z_\text{eff,1}^2 \cdot \frac{1}{n^2} + \alpha^2 z_\text{eff,2}^4 \cdot \frac{1}{n^3} \left(\frac{1}{j + 	\frac{1}{2}} - \frac{3}{4n} \right)\right)
+\end{equation}
+$\alpha$ ist hierbei die Feinstrukturkonstante, $n$ die Hauptquantenzahl und $j$ der Gesamtdrehimpuls. Anstatt die Abschirmkonstante $\sigma_\text{L}$ direkt zu bestimmen, kann die Energiedifferenz $\increment E_\text{L}$ von zwei L-Kanten verwendet werden. Somit ergibt sich für die Abschirmkonstante
+\begin{equation}
+\label{eq:4}
+	\sigma_{\text{L}} = Z - \left(\frac{4}{\alpha} \sqrt{\frac{\increment E_{\text{L}}}{R_\infty}} - \frac{5 \increment E_{\text{L}}}		{R_\infty}\right)^\frac{1}{2} \left(1 +
+ 	\frac{19}{32} \alpha^2 \frac{\increment E_{\text{L}}}{R_\infty}\right)^\frac{1}{2}
+\end{equation}
+\\
+Die Energie, bzw die Wellenlänge kann auch mithilfe der Braggschen Reflexion bestimmt werden. Das Röntgenlicht trifft auf ein dreidimensionales Gitter. Die Elektronen werden nun an jedem Gitteratom gebeugt und interferieren miteinander. Es kommt zur konstruktiven Interferenz unter dem Glanzwinkel $\Theta$. Somit kann die Braggsche Bedingung angewendet werden:
+\begin{equation}
+\label{eq:5}
+	2dsin\Theta = n\lambda
+\end{equation}

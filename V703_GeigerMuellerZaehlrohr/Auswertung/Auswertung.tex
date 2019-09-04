@@ -1,0 +1,226 @@
+\section{Auswertung}
+\label{Auswertung}
+\subsection{Charakteristik}
+Die bei der Messung aufgenommenen Zählraten $N$ sind in Tabelle \ref{tab:Messung1} aufgetragen. Diese werden in Abhängigkeit von der Spannung $U$ bei einer jeweiligen Messzeit von 60 s aufgenommen und auf 1 s umgerechnet. \*
+Der Fehler von $N$ ergibt sich dabei durch
+\begin{equation*}
+	\increment N = \sqrt{N}.
+\end{equation*}
+
+\begin{table} [H]
+	\centering
+	\caption{Messdaten der Charakteristik des Zählrohres.}
+	\label{tab:Messung1}
+	\sisetup{table-format=4.2}
+	\begin{tabular}{S[table-format=4.2]ccc}
+		\toprule
+		{$U / V$}&{$N / s$}&{$I / \mu A$} \\
+		\midrule
+		300& 0& 0\\
+		310 &190.17$\pm$13.79& 0.1\\
+		320 &196.10$\pm$14.00& 0.1\\
+		330 &199.20$\pm$14.11& 0.1\\
+		340 &196.02$\pm$14.00& 0.1\\
+		350 &199.15$\pm$14.11& 0.2\\
+		360 &199.70$\pm$14.13& 0.2\\
+		370 &202.40$\pm$14.23& 0.2\\
+		380 &200.50$\pm$14.16& 0.3\\
+		390 &202.08$\pm$14.22& 0.3\\
+		400 &202.62$\pm$14.23& 0.3\\
+		410 &204.47$\pm$14.30& 0.3\\
+		420 &204.22$\pm$14.29& 0.4\\
+		430 &205.55$\pm$14.34& 0.4\\
+		440 &203.50$\pm$14.27& 0.4\\
+		450 &203.60$\pm$14.27& 0.4\\
+		460 &206.78$\pm$14.38& 0.5\\
+		470 &207.67$\pm$14.41& 0.5\\
+		480 &203.88$\pm$14.28& 0.5\\
+		490 &205.08$\pm$14.32& 0.6\\
+		500 &205.62$\pm$14.34& 0.6\\
+		510 &205.67$\pm$14.34& 0.6\\
+		520 &207.02$\pm$14.39& 0.6\\
+		530 &208.18$\pm$14.43& 0.7\\
+		540 &206.93$\pm$14.39& 0.7\\
+		550 &206.95$\pm$14.39& 0.7\\
+		560 &204.08$\pm$14.29& 0.7\\
+		570 &208.63$\pm$14.44& 0.8\\
+		580 &207.05$\pm$14.39& 0.8\\
+		590 &205.38$\pm$14.33& 0.8\\
+		600 &210.23$\pm$14.50& 0.8\\
+		610 &204.50$\pm$14.30& 0.9\\
+		620 &208.87$\pm$14.45& 1.0\\
+		630 &210.90$\pm$14.52& 1.0\\
+		640 &206.82$\pm$14.38& 1.0\\
+		650 &211.22$\pm$14.53& 1.0\\
+		660 &212.85$\pm$14.59& 1.0\\
+		670 &213.13$\pm$14.60& 1.0\\
+		680 &217.32$\pm$14.74& 1.1\\
+		690 &214.05$\pm$14.63& 1.1\\
+		700 &220.70$\pm$14.86& 1.2\\
+		\bottomrule 
+	\end{tabular}
+\end{table} 
+
+In Abbildung \ref{fig:Charakteristik} ist die Charakteristik des Zählrohres abgebildet. Hierzu wurde Zählrate pro Sekunde verwendet ($N \cdot \frac{1}{\text{s}}$). Die Fehler ergeben sich durch
+\begin{equation*}
+	\increment n = \frac{\sqrt{N}}{\increment t}
+\end{equation*}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.7]{Auswertung/Charakteristik.pdf}
+    \caption{Charakteristik des Zählrohres.}
+    \label{fig:Charakteristik}
+\end{figure}
+
+Es ist zu erkennen, dass das Plateau erst bei einer Spannung von 310 V besteht. Um dieses Plateau nun genauer zu untersuchen, wird eine lineare Regression ab einer Spannung von 310 V durchgeführt. Diese ist in Abbildung \ref{fig:Regression} abgebildet. 
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.7]{Auswertung/Charakteristik_Regression.pdf}
+    \caption{Regression des Charakteristik-Plateaus.}
+    \label{fig:Regression}
+\end{figure}
+
+Als Regressionsfunktion wurde 
+\begin{equation*}
+	I(U) = m \cdot U + b
+\end{equation*}
+verwendet.
+Es ergeben sich folgende Werte:
+\begin{gather*}
+	m = 0.02051 \pm 0.00003 \frac{1}{\text{Vs}} \\
+	b = 196 \pm 7 \frac{1}{\text{s}}\\
+\end{gather*}
+Somit ergibt sich eine Plateausteigung von
+\begin{equation*}
+	m_\text{Pl} = (1 \pm 0.00005)\%  \text{pro}  100V .
+\end{equation*}
+
+\subsection{Totzeit}
+\subsubsection{Ablesen des Oszilloskops}
+Am Oszilloskop lassen sich folgende Totzeiten $T_\text{t}$ und Erholungszeiten $T_\text{E}$ ablesen:
+  
+\begin{table} [H]
+	\centering
+	\caption{Totzeiten $T_\text{t}$ und Erholungszeiten $T_\text{E}$ des Zählrohres.}
+	\label{tab:Zeiten}
+	\sisetup{table-format=4.2}
+	\begin{tabular}{S[table-format=4.2]|cc}
+		\toprule
+		{$U / V$}&{$T_\text{t} / \mu s$}&{$T_\text{E} / \mu s$} \\
+		\midrule
+		550&60$\pm$1&140$\pm$1\\
+		500&58$\pm$1&120$\pm$1\\
+		450&56$\pm$1&100$\pm$1\\
+		\bottomrule 
+	\end{tabular}
+\end{table} 
+	
+Die Fehler ergeben sich, da ein genaues Ablesen nicht möglich ist.
+Aus den berechneten Werten wird dann der Mittelwert mit folgender Formel gebildet.
+\begin{equation*}
+    \overline{x} = \frac{1}{N} \sum_{i=1}^N x_i
+\end{equation*}
+
+Somit ergibt sich nach dieser Messung eine Totzeit und eine Erholungszeit von:
+\begin{gather*}
+	 T_\text{t} =  58\pm1 \\
+	T_\text{E} = 120\pm1
+\end{gather*}
+
+\subsubsection{Zwei-Quellen-Methode}
+Bei der Zwei-Quellen-Methode werden folgende Zählraten innerhalb von 60 Sekunden, bei einer Spannung $U$ von 450V, gemessen:
+
+\begin{table} [H]
+	\centering
+	\caption{Totzeiten $T_\text{t}$ und Erholungszeiten $T_\text{E}$ des Zählrohres.}
+	\label{tab:Zeiten}
+	\sisetup{table-format=10}
+	\begin{tabular}{|ccc|}
+		\toprule
+		{$\frac{N_1}{60\text{s}}$}&{$\frac{N_2}{60\text{s}}$}&{$\frac{N_{1+2}}{60\text{s}}$} \\
+		\midrule
+		14034$\pm$118&13155$\pm$115&26491$\pm$163\\
+		\bottomrule 
+	\end{tabular}
+\end{table} 
+
+Durch Gleichung 
+\begin{equation*}
+	T = \frac{N_1 + N_2 - N_{1+2}}{2N_1N_2}
+\end{equation*}
+ergibt sich somit für die Totzeit der Wert:
+\begin{equation*}
+	T_\text{t} = \SI{19\pm6}{\second}
+\end{equation*}
+
+Der Fehler lässt sich nach der Gaußschen Fehlerfortpflanzung bestimmen:
+\begin{equation*}
+  \begin{split}
+  \increment T = & \biggl(\left(\frac{2n_1n_2 - (n_1+n_2-n_{1+2})2n_2}{(2n_1n_2)^2}\cdot \increment n_1 \right)^2 \\
+  + & \left(\frac{2n_1n_2 - (n_1+n_2-n_{1+2})2n_1}{(2n_1n_2)^2} \cdot \increment n_2\right)^2  +  \left(-\frac{2n_1n_2}{(2n_1n_2)^2} \cdot \increment n_{1+2}\right)^2\biggr)^{\frac{1}{2}}.
+  \end{split}
+\end{equation*}
+
+\subsection{Freigesetzte Ladung}
+Die zur Bestimmung der Ladung benötigten Messwerte sind in Tabelle \ref{tab:Messung2} aufgetragen. 
+
+\begin{table} [h]
+	\centering
+	\caption{Messdaten der Charakteristik des Zählrohres.}
+	\label{tab:Messung2}
+	\sisetup{table-format=4.2}
+	\begin{tabular}{S[table-format=4.2]ccc}
+		\toprule
+		{$U / V$}&{$N / s$}&{$I / \mu A$}&{$Q \cdot 10^{10} / e_0$} \\
+		\midrule
+		300& 0& 0 &0\\
+		310 &190.17$\pm$13.79& 0.1&3.28$\pm$0.030 \\
+		320 &196.10$\pm$14.00& 0.1&3.18$\pm$0.029\\
+		330 &199.20$\pm$14.11& 0.1&3.13$\pm$0.028\\
+		340 &196.02$\pm$14.00& 0.1&3.18$\pm$0.029\\
+		350 &199.15$\pm$14.11& 0.2&6.27$\pm$0.061\\
+		360 &199.70$\pm$14.13& 0.2&6.25$\pm$0.061\\
+		370 &202.40$\pm$14.23& 0.2&6.17$\pm$0.060\\
+		380 &200.50$\pm$14.16& 0.3&9.34$\pm$0.082\\
+		390 &202.08$\pm$14.22& 0.3&9.27$\pm$0.081\\
+		400 &202.62$\pm$14.23& 0.3&9.24$\pm$0.081\\
+		410 &204.47$\pm$14.30& 0.3&9.16$\pm$0.081\\
+		420 &204.22$\pm$14.29& 0.4&12.2$\pm$0.111\\
+		430 &205.55$\pm$14.34& 0.4&12.1$\pm$0.112\\
+		440 &203.50$\pm$14.27& 0.4&12.3$\pm$0.112\\
+		450 &203.60$\pm$14.27& 0.4&12.3$\pm$0.112\\
+		460 &206.78$\pm$14.38& 0.5&15.1$\pm$0.124\\
+		470 &207.67$\pm$14.41& 0.5&15.0$\pm$0.124\\
+		480 &203.88$\pm$14.28& 0.5&15.3$\pm$0.126\\
+		490 &205.08$\pm$14.32& 0.6&18.3$\pm$0.132\\
+		500 &205.62$\pm$14.34& 0.6&18.2$\pm$0.132\\
+		510 &205.67$\pm$14.34& 0.6&18.2$\pm$0.132\\
+		520 &207.02$\pm$14.39& 0.6&18.1$\pm$0.132\\
+		530 &208.18$\pm$14.43& 0.7&21.0$\pm$0.252\\
+		540 &206.93$\pm$14.39& 0.7&21.1$\pm$0.252\\
+		550 &206.95$\pm$14.39& 0.7&21.1$\pm$0.252\\
+		560 &204.08$\pm$14.29& 0.7&21.4$\pm$0.255\\
+		570 &208.63$\pm$14.44& 0.8&23.9$\pm$0.289\\
+		580 &207.05$\pm$14.39& 0.8&24.1$\pm$0.290\\
+		590 &205.38$\pm$14.33& 0.8&24.3$\pm$0.292\\
+		600 &210.23$\pm$14.50& 0.8&23.8$\pm$0.289\\
+		610 &204.50$\pm$14.30& 0.9&27.5$\pm$0.301\\
+		620 &208.87$\pm$14.45& 1.0&29.9$\pm$0.333\\
+		630 &210.90$\pm$14.52& 1.0&29.6$\pm$0.331\\
+		640 &206.82$\pm$14.38& 1.0&30.2$\pm$0.334\\
+		650 &211.22$\pm$14.53& 1.0&29.6$\pm$0.331\\
+		660 &212.85$\pm$14.59& 1.0&29.3$\pm$0.329\\
+		670 &213.13$\pm$14.60& 1.0&29.3$\pm$0.329\\
+		680 &217.32$\pm$14.74& 1.1&31.6$\pm$0.360\\
+		690 &214.05$\pm$14.63& 1.1&32.1$\pm$0.382\\
+		700 &220.70$\pm$14.86& 1.2&33.9$\pm$0.398\\
+		\bottomrule 
+	\end{tabular}
+\end{table} 
+
+Der Fehler ergibt sich dabei durch 
+\begin{equation*}
+	\increment Q = \frac{I}{e_0 N^2}
+\end{equation*}

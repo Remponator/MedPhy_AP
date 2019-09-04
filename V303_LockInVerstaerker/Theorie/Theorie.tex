@@ -1,0 +1,48 @@
+\section{Zielsetzung}
+
+In diesem Versuch soll die Funktionsweise eines Lock-In-Verstärkers untersucht werden um das Prinzip der Rauschunterdückung kennenzulernen.
+
+\section{Theorie}
+
+Mithilfe eines Lock-In-Verstärkers können Signale mit starkem Rauschen gemessen werden. 
+Der schematische Aufbau ist in Abbildung \ref{fig:Aufbau} dargestellt.
+\begin{figure}[h]
+  \centering
+  \includegraphics[height=4cm]{Grafiken/Schaltung.pdf}
+  \caption{Schematischer Aufbau eines Lock-In-Verstärkers. \cite{1}}
+  \label{fig:Aufbau}
+\end{figure}
+Das zu untersuchende Nutzsignal $U_\text{sig}$ wird mit der Referenzfrequenz $\omega_0$ moduliert.  Zuerst entfernt der Bandpassfilter alle Frequenzanteile die viel höher oder niedriger sind als $\omega_0$. Der Mischer multipliziert nun $U_\text{sig}$ mit einem Referenzsignal $U_\text{ref}$ mit der Frequenz $\omega_0$. Damit die Phasen synchron sind ($\Delta \phi = 0$), wird die Phasenlage $\phi$ des Referenzsignals mithilfe des Phasenschiebers variiert.
+Der Tiefpass ($\tau = RC >> \frac{1}{\omega_0}$) integriert nun $U_\text{sig} \times U_\text{ref}$  über mehrere Perioden, wodurch das Rauschen größenteils herausgemittelt wird. Am Ausgang wird somit eine Gleichspannung $U_\text{out} \propto U_0 cos\phi$ erreicht. 
+Wird die Zeitkonstante $\tau = RC$ des Tiefpasses sehr groß gewählt, so wird die Bandbreite des Restrauschen $\nu = \frac{1}{\pi RC}$ sehr klein. Somit können Güten von bis zu Q = 100000 erreicht werden.
+\\
+\begin{figure}[h]
+  \centering
+  \includegraphics[height=7cm]{Grafiken/Spannung.pdf}
+  \caption{Beispielverläufe der Spannungen. \cite{1}}
+  \label{fig:Spannung}
+\end{figure}
+In Abbildung \ref{fig:Spannung} ist ein beispielhafter Signalverlauf einer Sinusspannung dargestellt mit
+\begin{equation}
+	U_\text{sig} = U_0sin(wt)
+\end{equation}
+Diese kann mit einer rechteckförmigen Referenzspannung mit gleicher Frequenz moduliert werden. Die Amplitude ist dabei auf 1 normiert.
+Mithilfe einer Fourier-Transformation ergibt sich:
+\begin{equation}
+	U_\text{ref} = \frac{4}{\pi} \biggl(sin(\omega t) + \frac{1}{3}sin(3\omega t) + \frac{1}{5}sin(5\omega t) + ... \biggr)
+\end{equation}
+ Diese Reihe ist aus den ungeraden Harmonischen der Grundfrequenz $\omega$ zusammengesetzt.
+ Die geraden Oberwellen von $\omega$ ergeben sich nun aus dem Produkt von Signal- und Referenzfrequenz:
+ \begin{equation}
+ 	U_\text{sig} \times U_\text{ref} = \frac{2}{\pi}U_0\biggl(1-\frac{2}{3}cos(2\omega t)-\frac{2}{15}cos(4\omega t)-\frac{2}{35}cos(6\omega t)+...\biggr)
+\end{equation}
+Der Tiefpass unterdrückt nun diese Oberwelle, wodurch sich die zur Eingangsspannung proportionale Gleichspannung
+\begin{equation}
+	U_\text{out} = \frac{2}{\pi}U_0
+\end{equation}
+ergibt. Bei einer Phasendifferenz ergibt sich:
+ \begin{equation}
+  	U_\text{out}=\frac{2}{\pi}U_0cos(\phi)
+\end{equation}
+
+Den Maximalwert der Ausgangsspannung wird bei der Phase $\phi = 0$ erreicht.

@@ -1,0 +1,22 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\select@language {german}
+\contentsline {section}{\numberline {1}Zielsetzung}{3}{section.1}
+\contentsline {section}{\numberline {2}Theorie}{3}{section.2}
+\contentsline {section}{\numberline {3}Aufbau}{4}{section.3}
+\contentsline {section}{\numberline {4}Durchführung}{5}{section.4}
+\contentsline {section}{\numberline {5}Auswertung}{5}{section.5}
+\contentsline {subsection}{\numberline {5.1}Überprüfung der Bragg-Bedingung}{5}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Das Emissionsspektrum}{6}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}Die Absorptionsspektren}{9}{subsection.5.3}
+\contentsline {subsubsection}{\numberline {5.3.1}Galliumabsorber}{9}{subsubsection.5.3.1}
+\contentsline {subsubsection}{\numberline {5.3.2}Zinkabsorber}{10}{subsubsection.5.3.2}
+\contentsline {subsubsection}{\numberline {5.3.3}Zirkoniumabsorber}{10}{subsubsection.5.3.3}
+\contentsline {subsubsection}{\numberline {5.3.4}Bromabsorber}{11}{subsubsection.5.3.4}
+\contentsline {subsubsection}{\numberline {5.3.5}Moseleysches-Gesetz}{12}{subsubsection.5.3.5}
+\contentsline {subsubsection}{\numberline {5.3.6}Wismutabsober}{12}{subsubsection.5.3.6}
+\contentsline {subsection}{\numberline {5.4}Tabellen}{14}{subsection.5.4}
+\contentsline {section}{\numberline {6}Diskussion}{18}{section.6}
+\contentsline {subsection}{\numberline {6.1}Der schwere Absorber}{18}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}Das Moseleysche Gesetz}{19}{subsection.6.2}
+\contentsline {section}{\nonumberline Literatur}{19}{section*.18}

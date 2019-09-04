@@ -1,0 +1,112 @@
+\section{Auswertung}
+
+\subsection{Bestimmung der Wellenlänge}
+
+Die Wellenlänge des Lasers wird über die Anzahl der Maxima $z$ bei einer Verschiebung eines Spiegels um $\Delta d$ bestimmt.
+Dazu werden die in Tabelle 1 aufgelisteten Wertepaare gemessen, wobei der angezeigte Wert eine Hebeluntersetzung von $1:5,017$ zur wirklichen Verschiebung des Spiegels hat.
+
+\begin{table}[H]
+    \begin{center}
+      \label{tab:werte}
+      \begin{tabular}{c|c|c}
+        \hline
+        \textbf{angezeigte} & \textbf{übersetzte} & \textbf{Anzahl der}\\
+        \textbf{Verschiebung $[mm]$} & \textbf{Verschiebung  $\Delta d \;[mm]$} & \textbf{Maxima $z$}\\
+        \hline
+        5,0 & 0,997 & 3042 \\
+        5,0 & 0,997 & 3069 \\
+        5,0 & 0,997 & 3061 \\
+        5,0 & 0,997 & 3093 \\
+        5,0 & 0,997 & 3080 \\
+        5,0 & 0,997 & 3113
+      \end{tabular}
+      \caption{Anzahl der Maxima bei Verschiebungen des Spiegels um $\Delta d$.}
+    \end{center}
+  \end{table}
+  
+Über die Gleichungen
+\begin{equation}
+    \label{eq:mean}
+    \bar{x} = \frac{1}{N} \sum_{i=1}^{N} x_i \qquad \text{und} \qquad \Del{\bar{x}} = \sqrt{ \frac{\sum_{i=1}^{N} \left( x_i - \bar{x} \right)^2}{N\,(N-1)}} \: .
+\end{equation}
+wird der Mittelwert und der daraus resultierende Fehler der Anzahl der Maxima $z$ bestimmt.
+Es ergibt sich ein Mittelwert von
+\begin{equation}
+    \bar{z} = 3076,34 \pm 10,17,   \notag
+\end{equation}
+woraus sich nach Gleichung \ref{eq:5} die Wellenlänge durch
+\begin{equation}
+    \lambda = \frac{2 \cdot \Delta d}{z}    \notag
+\end{equation}
+bestimmen lässt.
+Über die Gau\ss{}sche Fehlerfortpflanzung nach
+\begin{equation}
+    \Delta \lambda = \sqrt{\left (- \frac{2 \cdot \Delta d}{z^{2}} \Delta z \right)^{2}} \notag
+\end{equation}
+wird die Wellenlänge auf
+\begin{equation}
+    \lambda = \SI{647,922 \pm 2,142}{nm}   \notag
+\end{equation}
+bestimmt.
+
+\subsection{Bestimmung des Brechungsindizes}
+
+Zur Bestimmung des Brechungsindizes werden die Werte aus Tabelle 2 aufgezeichnet.
+
+\begin{table}[H]
+    \begin{center}
+      \label{tab:werte}
+      \begin{tabular}{c|c}
+        \hline
+        \textbf{Druckunterschied $\Delta p \; [bar]$} & \textbf{Anzahl der Maxima $z$}\\
+        \hline
+        0,8 & 33 \\
+        0,8 & 32 \\
+        0,8 & 32 \\
+        0,8 & 32 \\
+        0,8 & 29 \\
+        0,8 & 31
+      \end{tabular}
+      \caption{Anzahl der Maxima bei Veränderung des Brechungsindizes.}
+    \end{center}
+\end{table}
+
+Dabei ergibt sich nach den Gleichungen \ref{eq:mean} ein Mittelwert und der dazugehörige Fehler von
+\begin{equation}
+    \bar{z} = 31,50 \pm 0,57.   \notag
+\end{equation}
+Mittels Gleichung \ref{eq:5}, der Herstellerangabe der Wellenlänge von $\lambda = \SI{635}{nm}$ und einer Länge des zu durchlaufenden Mediums von $b = \SI{50}{mm}$ ergibt sich
+\begin{equation}
+    \Delta n = 0,000200 \pm 0,0000004.    \notag
+\end{equation}
+mit der Gau\ss{}schen Fehlerfortpflanzung
+\begin{equation}
+    \Delta (\Delta n) = \sqrt{\left( \frac{\lambda}{2 b} \Delta z \right)^{2}}. \notag
+\end{equation}
+
+Zur Bestimmung des Brechungsindizes von Luft bei Normalbedingungen werden folgende Werte benötigt:
+\begin{equation}
+    p_0 = \SI{1,0132}{bar}  \notag
+\end{equation}
+\begin{equation}
+    T_0 = \SI{273,15}{K}  \notag
+\end{equation}
+\begin{equation}
+    T = \SI{293,15}{K}.  \notag
+\end{equation}
+Nach Gleichung \ref{eq:7} lässt sich nun der Brechungsindex für Luft bei Normalbedingungen auf
+\begin{equation}
+    n_\text{Luft} = 1,000272 \pm 0.000005   \notag
+\end{equation}
+bestimmen.
+Der Fehler dabei ergibt sich auf der Gau\ss{}schen Fehlerfortpflanzung
+\begin{equation}
+    \Delta n = \sqrt{\left (\frac{T}{T_0} \frac{p}{\Delta p} \Delta (\Delta n) \right )^{2}}.   \notag
+\end{equation}
+\section{Diskussion}
+Es fällt auf, dass der berechnete Wert der Wellenlänge eine gute Übereinstimmung mit der Herstellerangabe hat.
+Der experimentelle Wert $\lambda_\text{exp} = \SI{647,922 \pm 2,142}{nm}$ hat dabei eine Abweichung von $2 \%$ zur Herstellerangabe von $\lambda_\text{Her} = \SI{635}{nm}$.\\
+Des Weiteren fällt auf, dass der Unterschied des Brechungsindizes sehr gering ist.
+Das kann trotz des hohen Druckunterschiedes auf die systematischen Fehler der Messgeräte zurückgeführt werden.
+Trotzdem kann auf gleichmäßige Messungen geschlossen werden, da die Fehler der Mittelwerte jeweils relativ gering sind.\\
+Der bestimmte Brechungsindex von Luft bei Normalbedingungen liegt bei $n_\text{exp} = 1,000272 \pm 0.000005$ und hat zum Literaturwert von $n_\text{Lit} = 1,000292$ eine Abweichung von $0,002 \%$ und ist somit vernachlässigbar gering.

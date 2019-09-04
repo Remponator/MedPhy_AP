@@ -1,0 +1,11 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\select@language {german}
+\contentsline {section}{\numberline {1}Zielsetzung}{3}{section.1}
+\contentsline {section}{\numberline {2}Theorie}{3}{section.2}
+\contentsline {section}{\numberline {3}Aufbau und Durchführung}{5}{section.3}
+\contentsline {section}{\numberline {4}Auswertung}{7}{section.4}
+\contentsline {subsection}{\numberline {4.1}Abhängigkeit der Ausgangsspannung von der Phasenverschiebung}{7}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Rauschunterdrückung mit einer Photodetektorschaltung}{10}{subsection.4.2}
+\contentsline {section}{\numberline {5}Diskussion}{13}{section.5}
+\contentsline {section}{\numberline {6}Literatur}{13}{section.6}

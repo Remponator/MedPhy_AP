@@ -1,0 +1,255 @@
+\section{Auswertung}
+
+In den folgenden Rechnungen werden angegebene, bauspezifische Werte der Schaltung verwendet:
+\begin{gather}
+	L = (16.78\pm0.09)\text{mH}\notag \\
+	C = (2.066\pm0.066)\text{nF}\notag\\
+	\kern-2.7emR_1 = (67.2\pm0.2)\text{\Omega}\notag\\
+	\kern-3.7emR_2 = (682\pm1)\text{\Omega} \notag 
+\end{gather}
+
+\subsection{Zeitabhängigkeit der Amplitude (a)}
+
+Bei der ersten Versuchsdurchführung wird eine gedämpfte Schwingung beobachtet, bei der die abklingende Amplitude in Abhängigkeit von der Zeit gemessen wird.
+Diese in der Tabelle 1 aufgetragenen Wertepaare ergeben näherungsweise folgende Exponentialfunktion.
+
+Bei der Messung ergaben sich folgende Werte:
+\begin{table} [H]
+	\centering
+	\caption{Amplitude.}
+	\label{tab:(a)}
+	\sisetup{table-format=3.6}
+	\begin{tabular}{S[table-format=3.4] S S S [table-format=4.8]}
+		\toprule
+			& \multicolumn{2}{c}{Amplitude / V} \\
+		\cmidrule(lr){2-3}
+		{$T_A$ / $\mu$s} & {$A_1$}\\
+		\midrule
+		40.0&2.60\\
+		76.0&1.60\\
+		116.0&0.80\\
+		152.0&0.20\\
+		192.0&-0.60\\
+		228.0&-1.20\\
+		268.0&-1.80\\
+		302.0&-2.20\\
+		338.0&-2.60\\
+		378.0&-3.00\\
+		418.0&-3.40\\
+		456.0&-3.60\\
+		494.0&-3.80\\
+		\bottomrule 
+	\end{tabular}
+\end{table}
+
+$A_1$ ist hierbei der jeweilige Wert der Maximalamplitude zum Zeitpunkt $T_\text{A}$.
+
+Diese in der Tabelle 1 aufgetragenen Wertepaare ergeben näherungsweise folgende Exponentialfunktion,
+
+\begin{equation}
+	{A(t)} = {A_0} \cdot \symup{e}^ {2\pi\mu} + {C}
+\end{equation}
+\newpage
+welche durch folgende Werte beschrieben wird.
+
+\begin{equation}
+	{A_0} = \SI{9.6853 \pm 0.02866}{\volt}
+\end{equation}
+\begin{equation}
+	{\mu} = \SI{495.953 \pm 3460.051}{\per\second}
+\end{equation}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[height=10cm]{Auswertung/Einhüllende.png}
+  \caption{Einhüllende.}
+  \label{fig:1}
+\end{figure}
+
+Der Dämpfungswiderstand wird mit der Formel (10) aus der Theorie berechnet, wobei der Fehler mit der Gaußschen Fehlerfortpflanzung bestimmt wird.
+
+\begin{quote}
+$\increment R_\text{eff} = \sqrt{(\frac{\partial R_\text{eff}}{\partial \mu} * \sigma_{\mu})^2 + (\frac{\partial R_\text{eff}}{\partial L} * \sigma_{L})^2}$
+\end{quote}
+
+Letztendlich ergibt sich für den Widerstand also
+
+\begin{equation}
+	{R_\text{eff}} = \SI{104.579 \pm 729.59934}{\ohm}
+\end{equation}
+
+Die Zeit $T_\text{ex}$ beschreibt die Abklingdauer, in der die Amplitude auf en e-ten Teil ihres Ausgangswertes zurückgegangen ist.
+Experimentell lässt sich diese mit Gleichung (11) bestimmen und es ergibt sich
+ 
+\begin{equation}
+	{T_\text{ex}} = \SI{0.00032 \pm 0.00224}{\s}
+\end{equation}
+
+Die theoreitsche Berechnung von $T_\text{ex}$ ergibt sich aus der Gleichung (11) und hat den folgenden Wert
+
+\begin{equation}
+	{T_\text{ex}} = \SI{0.00050}{\s}
+\end{equation}
+
+\subsection{Dämpfungswiderstand}
+
+Der Dämpfungswiderstand $R_\text{ap}$ beim aperiodischen Grenzfall wird gemessen als
+\begin{equation}
+	R_\text{ap} = 2.76 \text{k}\Omega \notag
+\end{equation}
+
+Aus der Gleichung (13) wird der theoretische Wert dieses Widerstandes berechnet.
+Mit Hilfe der Gaußschen Fehlerfortpflanzung wird dazu noch der Fehler bestimmt
+
+\begin{quote}
+$\increment R_\text{ap} = \sqrt{(\frac{\partial R_\text{ap}}{\partial L} * \sigma_{L})^2 + (\frac{\partial R_\text{ap}}{\partial C} * \sigma_{C})^2}$
+\end{quote}
+
+Insgesamt ergibt sich also für den theoretisch errechneten Widerstand beim aperiodischen Grenzfall
+
+\begin{equation}
+	{R_\text{ap}} = \SI{5699.8 \pm 92.3}{\ohm}
+\end{equation}
+
+
+\subsection{Frequenzabhängigkeit der Kondensatorspannung}
+
+Die Messung der Werte für die Amplituden in Abhängigkeit zur Frequenz ergeben:
+\begin{table} [H]
+	\centering
+	\caption{Amplituden im Verhältnis zur Frequenz.}
+	\label{tab:(c)}
+	\sisetup{table-format=3.3}
+	\begin{tabular}{S[table-format=2.0] S S S  S [table-format=2.0] S [table-format=3.3]}
+		\toprule
+		{$f$ /kHz} & {A /V} & {$\qquad$} & {$\qquad$} & {$f$ /kHz} & {A /V}\\
+		\midrule
+		10&5.2&&&20&9.4\\
+		15&6.4&&&21&10.8\\
+		20&9.4&&&22&12.0\\
+		25&16.4&&&23&13.6\\
+		30&10.6&&&24&15.2\\
+		35&5.4&&&25&16.4\\
+		40&3.2&&&26&17.2\\
+		&&&&27&16.4\\
+		&&&&28&14.6\\
+		&&&&29&12.6\\
+		&&&&30&10.6\\
+		\bottomrule 
+	\end{tabular}
+\end{table}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[height=10cm]{Auswertung/Uc_Frequenzabhängigkeit.png}
+  \caption{Uc-Frequenzabhängigkeit.}
+  \label{fig:2}
+\end{figure}
+
+Aus dem Diagramm lässt sich der Maximalwert der Amplitude bzw. die Resonanzüberhöhung ablesen.
+
+\begin{equation}
+	{q} = \SI{17.2 \pm 0.1}{\V}
+\end{equation}
+
+Die theoretische Berechnung mit folgender Fehlerrechnung
+
+\begin{quote}
+$\increment q = \sqrt{(\frac{\partial q}{\partial R} * \sigma_{R})^2 + (\frac{\partial q}{\partial L} * \sigma_{L})^2+(\frac{\partial q}{\partial C} * \sigma_{C})^2}$
+\end{quote}
+
+und der Gleichung (21) ergibt 
+
+\begin{equation}
+	{q} = \SI{4.179 \pm 0.068}{\V}
+\end{equation}
+
+Außerdem werde die Breite der Resonanzkurve ermittelt
+
+\begin{equation}
+	{\nu_+ \nu_-} = \SI{14 \pm 0.2}{\kHz}
+\end{equation}
+
+Aus der Gleichung (21) ergibt sich die theoretisch berechnete Breite der Resonanzkurve.
+Hierbei wurde ebenfalls mit der Gaußschen Fehlerfortpflanzung gearbeitet.
+ 
+\begin{quote}
+$\increment \nu_+ \nu_- = \sqrt{\bigl(\frac{\partial (\nu_+ - \nu_-)}{\partial L} * \sigma_{L}\bigr)^2 + \bigl(\frac{\partial (\nu_+ - \nu_-)}{\partial R} * \sigma_{R}\bigr)^2}$
+\end{quote}
+
+Letzendlich ergab sich folgender Wert 
+
+\begin{equation}
+	{\nu_+ \nu_-} = \SI{40.643 \pm 0.226}{\kHz}
+\end{equation}
+
+\subsection{Frequenzabhängigkeit der Phasenverschiebung}
+
+Für die Phasenverschiebung für bestimmte Frequenzen wurden folgende Werte gemessen:
+\begin{table} [H]
+	\centering
+	\caption{Phasenverschiebung $U_\text{C}$ – $U_\text{G}$.}
+	\label{tab:(d)}
+	\sisetup{table-format=3.6}
+	\begin{tabular}{S[table-format=4.2] S [table-format=3.2] S [table-format=6.1]}
+		\toprule
+			& \multicolumn{1}{c}{\kern-5em$U_\text{G}$} \\
+		\cmidrule(lr){1-2}
+		{$f$ / kHz} & {$\Delta T_0$ / $\mu$s} & {\qquad a\footnotemark/ $\mu$s}\\
+		\midrule
+		10&99.0&1.8\\
+		15&67.0&2.2\\
+		20&50.0&4.0\\
+		25&40.0&8.0\\
+		30&33.6&13.0\\
+		35&28.8&12.6\\
+		40&37.6&11.6\\
+		45&33.2&10.6\\
+		50&30.0&9.9\\
+		\bottomrule 
+	\end{tabular}
+\end{table}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[height=10cm]{Auswertung/Phasenverschiebung.png}
+  \caption{Phasenverschiebung.}
+  \label{fig:3}
+\end{figure}
+
+Aus dem Diagramm werden nun die Werte für $\nu_\text{res}$, $\nu_\text{1, exp}$ und $\nu_\text{2, exp}$ abgelesen.
+Die letzten beiden werden jeweils bei einem Phasenunterschied von $\frac{\pi}{4}$ und $\frac{3*\pi}{4}$ abgelesen.
+
+\begin{equation}
+	{\nu_\text{1, exp}} = \SI{23.0 \pm 0.2}{\kHz}
+\end{equation}
+\begin{equation}
+	{\nu_\text{2, exp}} = \SI{30.0 \pm 0.2}{\kHz}
+\end{equation}
+
+Dann wird noch $\nu_\text{res}$ am Maximum des Diagramms abgelesen.
+
+\begin{equation}
+	{\nu_\text{res,exp}} = \SI{35.0 \pm 0.2}{\kHz}
+\end{equation}
+
+Die theoretischen werte werden mit den Gleichungen (22)(23) aus der Theorie berechnet.
+Dabei wird folgende Fehlerrechnung verwendet
+
+\begin{quote}
+$\increment v = \sqrt{(\frac{\partial \nu}{\partial R} * \sigma_{R})^2 + (\frac{\partial \nu}{\partial L} * \sigma_{L})^2+(\frac{\partial \nu}{\partial C} * \sigma_{C})^2}$
+\end{quote}
+
+Und damit ergeben sich folgende Werte
+
+\begin{equation}
+	{\nu_\text{1, the}} = \SI{24.0 \pm 0.4}{\kHz}
+\end{equation}
+\begin{equation}
+	{\nu_\text{2, the}} = \SI{37.1 \pm 0.4}{\kHz}
+\end{equation}
+\begin{equation}
+	{\nu_\text{res,the}} = \SI{26.6 \pm 0.4}{\kHz}
+\end{equation}
+
+\footnotetext{a:=$U_\text{C} - U_\text{G}$ Verschiebung} 

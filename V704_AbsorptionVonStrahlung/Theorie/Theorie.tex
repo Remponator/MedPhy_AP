@@ -1,0 +1,106 @@
+\section{Theorie}
+\label{sec:Theorie}
+\subsection{Wirkungsquerschnitt \& Absorptionsgesetz}
+
+Trifft ein Teilchenstrahl auf Materie, so kommt es durch Wechselwirkungen zu Intensitätsabnahme der Strahlung. Um die Wahrscheinlichkeit für diese Wechselwirkungen zu beschreiben, wird der Wirkungsquerschnitt $\sigma$ eingeführt. Für eine Reaktion mit einem einfallenden Teilchen wird sie berechnet anhand:
+\begin{equation*}
+\label{eq:Wahrscheinlichkeit}
+	W = nD\sigma 
+\end{equation*}
+$n$ ist hierbei die Anzahl der Materieteilchen und $D$ die Dicke des Absorbers, also der Materieschicht. Treffen nun $N_0$ Teilchen auf eine Fläche, so kommt es zu 
+\begin{equation*}
+\label{eq:Wechselwirkungen}
+	N = N_0nD\sigma
+\end{equation*}
+Wechselwirkung. Über Integration lässt sich nun das Absorptionsgesetz bestimmen
+\begin{equation}
+\label{eq:Absorptionsges}
+	N(D) = N_o e^{\text{-n} \sigma \text{D}}  .
+\end{equation}
+Die Anzahl der am Ende übrig bleibenden Teilchen $N$ ist dabei abhängig von der Dicke $D$. Dieses exponentielle Absorptionsgesetz ist jedoch nur dann streng gültig, wenn jedes der einfallenden Teilchen nur eine Reaktion mit dem Material hervorruft.
+Der Absorptionskoeffizient wird bezeichnet als $\mu$ und ist 
+\begin{equation*}
+	\mu = n\cdot\sigma.
+\end{equation*}
+Ist $\mu$ durch Absorptionsmessungen bestimmt, so kann der Wirkungsquerschnitt $\sigma$ mithilfe der Gleichung
+\begin{equation}
+	\sigma = \frac{\mu}{n} = \frac{\mu M}{zN_\text{L}\rho}
+\end{equation}
+bestimmt werden. $M$ ist das Molekulargewicht, $N_\text{L}$ die Loschmidtsche Zahl und $z$ die entsprechende Ordnungszahl. Hierbei handelt es sich jedoch nur um eine Annäherung des Wirkungsquerschnitts an die Realität.
+
+\subsection{Gamma-Strahlung}
+Wechselt ein Atomkern sein Energieniveau $E_\text{n}$, so kommt es zu der Aussendung eines $\gamma$-Quants. Die Energie dieses freiwerdenden Gammaquants ergibt sich nach
+\begin{equation*}
+	E_\gamma = E_1 - E_2 .
+\end{equation*}
+$E_1$ und $E_2$ sind dabei die Energieniveaus 1 und 2 der Kernezustände.
+Die Quanten haben ein diskretes Linienspektrum, da auch die Energieniveaus diskrete Zustände annehmen. Da sie sich mit Lichtgeschwindigkeit ausbreiten, besitzen sie keine Ruhemasse. Zudem kommt es bei bei Wechselwirkung mit Materie zu Interferenzen. Unterschiedliche Effekte treten auf, je nachdem womit diese $\gamma$-Quanten wechselwirken (siehe Abb. \ref{fig:Effekte}).
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.7]{Theorie/Effekte.pdf}
+    \caption{Verschiedene Wechselwirkungsprozesse von $\gamma$-Quanten mit Materie.}
+    \label{fig:Effekte}
+\end{figure}
+Die für uns bedeutendsten Effekte sind der Photo- und Compton-Effekt, sowie die Paarbildung. \*
+Der Photoeffekt ist zu beobachten, wenn ein $\gamma$-Quant mit einem Hüllenelektron wechselwirkt. Das $\gamma$-Quant gibt seine Energie vollständig an das Elektron ab und entfernt es somit aus seiner Bindung. Beim Auffüllen der Schale wird Röntgenstrahlung freigesetzt. \*
+Beim Compton-Effekt wird das $\gamma$-Quant an einem freien Elektron gestreut, anschaulich in Abbildung \ref{fig:Compton} dargestellt.
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.7]{Theorie/Compton.pdf}
+    \caption{Darstellung des Compton-Effekts.}
+    \label{fig:Compton}
+\end{figure}
+Somit kommt es zu einer Richtungs- und Energieänderung. Das Quant gibt jedoch nie seine komplette Energie an das Elektron ab. Trotzdem kommt es zu einer Abnahme der Intensität. Hierzu lässt sich der Wirkungsquerschnitt der Compton Streuung herleiten:
+\begin{equation}
+	\sigma_\text{Com} = 2 \pi r_\text{e}^2\left(\frac{1+\varepsilon}{\varepsilon^2}\left(\frac{2(1+\varepsilon)}{1 + 2\varepsilon} -
+	\frac{1}{\varepsilon}\ln(1+2\varepsilon)\right) + \frac{1}{2\varepsilon}\ln(1+2\varepsilon) - \frac{1+3\varepsilon}{(1+2\varepsilon)^2}\right)
+\end{equation}
+$r_\text{e}$ ist dabei den klassischen Elektronenradius ($r_\text{e} = 2,82\cdot10^{-15} \text{m}$) und $\epsilon$ das Verhältnis von Quantenenergie zur Ruheenergie des Elektrons.
+Daraus ergibt sich der Absorptionskoeffizient $\mu$
+\begin{equation}
+	\mu_\text{Com} = n \sigma_\text{Com}(\varepsilon) = \frac{z N_\text{L} \rho}{M} \sigma_\text{Com}(\varepsilon) .
+\end{equation}
+Paarbildung tritt auf, wenn die Energie des $\gamma$-Quants mindestens doppelt so groß wie die Ruhemasse des Elektrons ist. 
+Nun wird das Quant vernichtet, wobei ein Elektron und ein Positron entstehen. \\
+Somit tritt der Photoeffekt bei niedrigen Energien ein, bei hohen Energien die Paarbildung. Der Compton-Effekt ist meist bei mittleren Energien zu beobachten, kann aber auch schon bei geringeren Energien auftreten. Als Beispiel ist in Abbildung \ref{fig:Germanium} der Verlauf von $\mu$ in Abhängigkeit der Energie aufgetragen.
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.5]{Theorie/Germanium.pdf}
+    \caption{Absorptionskoeffizient von Germanium in Abhängigkeit der Energie.}
+    \label{fig:Germanium}
+\end{figure}
+
+\subsection{Beta-Strahlung}
+
+$\beta$-Strahlung bezeichnet Elektronen oder Positronen, welche vom Atomkern emittiert werden und eine hohe kinetische Energie besitzen. Die Energie entsteht bei der Umwandlung eines Protons oder Neutrons.
+\begin{gather*}
+	n \rightarrow p + \beta^{-} + \overline{v_\text{e}} \\
+	p \rightarrow n + \beta^{+} + v_\text{e} \\
+\end{gather*}
+Außerdem werden dabei Neutrinos oder Antineutrinos ausgesandt. Dabei entsteht ein kontinuierliches Spektrum, da sich die Energie statistisch auf das Elektron und das Neutrino verteilt (Abb. \ref{fig:VerteilungBeta}).
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.7]{Theorie/VerteilungBeta.pdf}
+    \caption{Emissionsspektrum eines $\beta$-Strahlers.}
+    \label{fig:VerteilungBeta}
+\end{figure}
+Im Vergleich zu $\gamma$-Strahlung, wechselwirkt $\beta$-Strahlung beim Durchgang durch Materie sehr häufig. Dies liegt an der geringen Masse der Teilchen.\\
+Unter anderem tritt die elastische Streuung am Atomkern auf, auch Rutherford-Streuung genannt. Hierbei wird der Teilchenstrahl am Atomkern aufgeteilt und in verschiedene Richtungen gestreut, weshalb die Intensität jeweils abnimmt, es aber trotzdem nur zu einem geringen Energieverlust kommt. Auch werden die Bahnen der Elektronen deutlich länger. \\
+Zudem kann es zu inelastischen Streuung am Atomkern kommen. Die $\beta$-Teilchen werden im Coulomb-Feld der Atome beschleunigt und geben dabei Energie ab, elektromagnetische Strahlung. Die Teilchen werden dabei wiederum abgebremst, weshalb diese Strahlung auch Bremsstrahlung genannt wird.\\
+Als letzte wichtige Wechselwirkungsart ist die inelastische Streuung zu nennen. Hierbei kommt es zu Ionisation und Anregung des Absorbermaterials, genauer gesagt, den Atomen. Das $\beta$-Teilchen gibt dabei nur eine geringe Menge seiner Energie ab und kann somit viele Ionisationen hintereinander durchführen.
+\\
+Auch $\beta$-Strahler haben einen exponentiellen Abfall an einem Absorbermaterial. Ab einem maximalen Abstand $R_\text{max}$ tritt die so genannte Untergrundstrahlung auf. Sie setzt sich aus Bremsstrahlung und Hintergrundstrahlung zusammen. Der typischen Intensitätsverlauf ist in Abbildung \ref{fig:BetaVerlauf} abgebildet. 
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.7]{Theorie/BetaVerlauf.pdf}
+    \caption{Intensitätsverlauf eines $\beta$-Strahlers.}
+    \label{fig:BetaVerlauf}
+\end{figure}
+Die Massenbelegung $R$ lässt sich über die Schichtdicke $D$ des Absorbermaterials bestimmen:
+\begin{equation}
+	R = \rho D .
+\end{equation}
+Und daraus kann nun die Energie der $\beta$-Teilchen bestimmt werden:
+\begin{equation}
+	E_\text{max} = 1,92 \cdot \sqrt{R^2_\text{max} + 0,22 R_\text{max}} .
+\end{equation}

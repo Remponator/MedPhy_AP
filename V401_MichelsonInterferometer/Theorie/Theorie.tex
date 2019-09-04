@@ -1,0 +1,83 @@
+\section{Zielsetzung}
+In dem folgenden Versuch soll die Wellenlänge eines Lasers, sowie der Brechungsindex von Luft, mithilfe des Michelson-Interferometers, bestimmt werden.
+
+\section{Theorie}
+\label{sec:Theorie}
+
+\subsection{Interferenz von Licht}
+
+Da es sich bei Licht um eine elektromagnetische Welle handelt, kann ihre Feldstärke $E$ am Ort $x$ zum Zeitpunkt $t$ mithilfe der Gleichung
+\begin{equation}
+    \label{eq:1}
+    E(x,t) = E_0 \cos(kx - \omega t - \delta)
+\end{equation}
+dargestellt werden. Dabei ist $k = \dfrac{2\pi}{\lambda}$ mit der Wellenlänge $\lambda$ die Wellenzahl, $\omega$ die Kreisfrequenz und $\delta$ eine beliebige Phase. Hier gilt das Superpositionsprinzip, das elektrische Feld $\overrightarrow{\text{E}}$ summiert sich also in einem Raumpunkt. Aufgrund der Schwierigkeit die Feldstärke bei hohen Lichtfrequenzen zu messen, wird die Intensität $I$ gemessen. 
+Die Intensität kann bestimmt werden über
+\begin{equation}
+\label{eq:2}
+	I = \text{const} \cdot |E_0|^2 .
+\end{equation}
+Bei Addition zweier Wellen ergibt sich somit
+\begin{equation}
+\label{eq:3}
+    I_\text{ges} = \text{const} \cdot 2 |E_0|^2 (1 + cos(\delta_2 - \delta_1)).
+\end{equation}
+Der letzte Term ist der sogenannte Interferenzterm. Er ist abhängig von den Phasen der beiden einzelnen Wellen. Der Interferenzterm verschwindet bei ungeraden Vielfachen von $\pi$. 
+\\
+Im Allgemeinen kann bei verschiedenen Lichtquellen keine Interferenzen auftreten. Dies ist mithilfe der statistischen Entstehung von Licht erklärbar. Wenn zuvor angeregte Atome in ihren Grundzustand übergehen, emittieren Elektronen Lichtquanten in Form von Wellen endlicher Länge. Diese entstehen jedoch verteilt über einen gewissen Zeitraum, weshalb sie auch zu unterschiedlichen Zeitpunkten am Beobachtungsort ankommen. Solches Licht wird als inkohärent bezeichnet. \newline
+Somit wird für Interfrenzeffekte kohärentes Licht benötigt, also Licht das sich nach \ref{eq:1} mit festem $k$, $\omega$ und $\delta$ beschreiben lässt. Dies ist mithilfe von Lasern realisierbar. \\
+Mithilfe des Aufbaus aus Abbildung \ref{fig:Prinzip} lässt sich aber auch bei "gewöhnlichen" Lichtquellen ein Interferenzmuster beobachten.
+\begin{figure}
+    \centering
+    \includegraphics[height=4cm]{Theorie/Prinzip.pdf}
+    \caption{Prinzipieller Aufbau zur Beobachtung von Interferenzen bei gewöhnlichen Lichtquellen \cite{V401}.}
+    \label{fig:Prinzip}
+\end{figure}
+Das Licht wird dabei in zwei Lichtstrahlen aufgeteilt und dann an einem Punkt $P$ wieder zusammengeführt. Durch verschieden lange Wege besitzen sie zueinander eine Phasendifferenz, wodurch es zu Interferenzen kommt. Diese Interferenzen sind jedoch nicht so klar wie bei kohärentem Licht. Zudem ist aufgrund der Kohärenzlänge $l$ nicht immer eine Interferenz sichtbar. Da, wie bereits erwähnt, die Lichtwelle nur eine endliche Länge besitzt, ist auch der Emissionsvorgang nur endlich lang. Ist der Wegunterschied größer als die Länge der Wellen, so kann keine Interferenz stattfinden, da die Lichtwellen zu unterschiedlichen Zeiten auf den Punkt $P$ treffen. Somit bezeichnet die Kohärenzlänge $l$ den maximalen Wegunterschied, bei dem noch Interferenz festgestellt werden kann. Mit der Anzahl $N$ der bei P maximal beobachtbaren Intensitätsmaxima ergibt sich somit
+\begin{equation}
+\label{eq:4}
+	l = N\cdot \lambda
+\end{equation}
+
+\subsection{Michelson-Interferometer}
+
+Bei dem Michelson-Interferometer teilt sich ein Lichtstrahl an einem semipermeablen Material, wie in Abbildung \ref{fig:Michelson} dargestellt.
+\begin{figure}
+    \centering
+    \includegraphics[height=6cm]{Theorie/Michelson.pdf}
+    \caption{Aufbau eines Michelson-Interferometers \cite{V401}.}
+    \label{fig:Michelson}
+\end{figure}
+Ein Teil des Lichtes geht durch das Material und läuft zum Spiegel S2, der andere Teil wird reflektiert und läuft zum Spiegel S1. An den Spiegeln werden die Strahlen erneut reflektiert und treffen an der Platte $P$ erneut zusammen. Dort wieder aufgeteilt, laufen die jeweiligen Teile der Strahlen parallel zum Detektor D. Diese Strahlen sind nun kohärent , sofern ihr Wegunterschied kleiner der Kohärenzlänge ist. Dies ist erfüllt, wenn die Abstände $\overline{S_1P}$ und $\overline{S_2P}$ fast gleich sind und zwischen P und S2 eine Kompensationsplatte angebracht wird. Diese Platte gleicht die Weglängen der Strahlen aus. Sind die Abstände gleich, so herrscht an D eine Gangunterschied von $\frac{\lambda}{2}$ und es kommt zur Auslöschung. Wird ein Spiegel um die Strecke $\increment d$ verschoben, so ändert sich die Intensität, die der Detektor bei D aufnimmt. Somit lässt sich die Wellenlänge $\lambda$ der Lichtquelle bestimmen
+\begin{equation}
+\label{eq:5}
+	\increment d = z \cdot \frac{\lambda}{2} .
+\end{equation}
+$z$ ist dabei die Anzahl der beobachteten Interferenzmaxima. \\
+Ein Wegunterschied kann auch mithilfe eines Mediums der Länge $b$ mit dem Brechungsindex $n + \increment n$ erreicht werden (siehe Abb. \ref{fig:Medium}).
+\begin{figure}
+    \centering
+    \includegraphics[height=6cm]{Theorie/Medium.pdf}
+    \caption{Erzeugung eines Wegunterschiedes mithilfe eines Mediums \cite{V401}.}
+    \label{fig:Medium}
+\end{figure}
+Aus \ref{eq:5} ergibt sich dann 
+\begin{equation}
+\label{eq:6}
+	b \cdot \increment n = z \cdot \frac{\lambda}{2}
+\end{equation}
+Der Brechungsindex kann zum Beispiel bei Gas mithilfe des Drucks gesteuert werden.
+
+Über den Brechungsindex ergibt sich die Gleichung
+\begin{equation}
+\label{eq:7}
+	n(p_0,T_0) = 1 + \increment n(p,p')\frac{T}{T_0}\frac{p_0}{\increment p}
+\end{equation}
+
+
+
+
+
+
+
+

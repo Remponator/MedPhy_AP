@@ -1,0 +1,66 @@
+\section{Zielsetzung}
+Im folgenden Versuch wird versucht, die Brennweiten verschiedener Linsen mithilfe der Verfahren von Bessel und Abbe zu bestimmen und die Linsengleichung zu verifizieren.
+
+\section{Theorie}
+\label{Theorie}
+Aufgrund der meist höheren Dichte der Linsen im Vergleich zum Umgebungsmaterial (hier Luft), wird ein auftreffender Lichtstrahl nach dem Brechungsgesetz durch das Linsenmedium gebrochen. Dies geschieht sowohl beim Eintritt in, als auch beim Austritt aus der Linse. Hierbei wird zwischen zwei Linsenarten unterschieden - der Sammellinse und der Zerstreuungslinse (siehe Abbildung \ref{fig:Linsen}). \\*
+
+Die Sammellinse ist dadurch charakterisiert, dass sie zum Linsenrand hin dünner wird und parallel einfallendes Licht in einem Brennpunkt bündelt. Sowohl ihre Brennweite $f$ als auch ihre Bildweite $b$ sind positiv und das entstehende Bild ist reell (hinter der Linse).
+Die Zerstreuungslinse hingegen wird zur Mitte hin dünner. Die Brennweite $f$ und Bildweite $b$ sind negativ und es wird ein virtuelles Bild projiziert (vor der Linse). 
+\begin{figure}[h]
+  \centering
+  \includegraphics[height=8cm]{Theorie/Linsen.pdf}
+  \caption{Bildkonstruktion eine Sammellinse (a) und einer Zerstreuungslinse (b).}
+  \label{fig:Linsen}
+\end{figure}
+\begin{figure}[h]
+  \centering
+  \includegraphics[height=4cm]{Theorie/dLinsen.pdf}
+  \caption{Bildkonstruktion einer dicken Linse.}
+  \label{fig:dLinsen}
+\end{figure}
+In den Abbildungen \ref{fig:Linsen} und \ref{fig:dLinsen} sind die geometrischen Bildkonstruktionen verschiedener Linsen abgebildet. Wie in den Abbildungen zu sehen, werden dafür drei Strahlen verwendet. Der Parallelstrahl $P$, der Mittelpunktstrahl $M$ und der Brennpunktstrahl $B$. Der Parallelstrahl verläuft parallel zum Gegenstand zur optischen Achse und wird dort an der Mittelebene/Hauptebene gebrochen und zum Brennpunktstrahl. Der Brennpunktstrahl läuft vom Gegenstand durch den Brennpunkt und wird nach Brechung an der Mittelebene zum Parallelstrahl. Der Mittelpunktstrahl verläuft vom Gegenstand durch den Mittelpunkt der Linse, ohne gebrochen zu werden. 
+Zur Bildkonstruktion an einer dicken Linse müssen zwei Hauptebenen statt der Mittelebene eingefügt werden. \\
+
+Aus der Bildkonstruktion und den Strahlensätzen kann das Abbildungsgesetz hergeleitet werden
+\begin{equation}
+	V = \frac{B}{G} = \frac{b}{g}
+\end{equation}.
+$V$ ist dabei der Abbildungsma\ss{}stab, $B$ die Bildgrö\ss{}e, $G$ die Gegenstandsgrö\ss{}e, sowie $b$ die Bildweite und $g$ die Gegenstandsweite.
+Bei dünnen Linsen kann auf die Linsengleichung geschlossen werden
+\begin{equation}
+	\frac{1}{f} = \frac{1}{b} + \frac{1}{g}
+\end{equation}.
+Wie bereits erwähnt, muss bei dicken Linsen und Linsensystemen die Hauptebene durch zwei Hauptebenen $H$ und $H'$ ersetzt werden. Brennweite, Gegenstandsweite und Bildweite werden dann einzeln für die Ebene bestimmt. \\
+
+Brechung an der Mittelebene/Hauptebene kann jedoch nur für achsennahe Strahlen vorausgesetzt werden. Achsenferne Strahlen führen zu Abbildungsfehlern. 
+Bei der sphärischen Abberation liegt der Brennpunkt der achsenfernen Strahlen näher an der Linse als der der nahen Strahlen. Bei der chromatischen Abberation führt die stärkere Brechung von kurzwelligerem Licht dazu, dass der zugehörige Brennpunkt näher an der Linse liegt als der von langwelligem Licht. \\
+
+Die Brechkraft $D = \frac{1}{f}$ wird über die reziproke Brennweite mit der Einheit Dioptrie \\*$[$dpt = 1/m$]$ definiert. Bei Linsensystemen werden die Brechkräfte addiert
+\begin{equation}
+	D = \sum_{i}^N D_i
+\end{equation}.
+\newpage
+Mithilfe der folgenden zwei Methoden kann die Brennweite einer Linse bestimmt werden.
+
+\subsection{Methode von Bessel}
+\label{Theorie/Bessel}
+Bei der Methode von Bessel wird der Abstand von Gegenstand und Bild festgehalten. Dann werden zwei Linsenpositionen gesucht, bei denen das Bild scharf erscheint. Bei dieser symmetrischen Linsenstellung gilt:
+\begin{gather*}
+	b_1 = g_2 \\
+	b_2 = g_1
+\end{gather*}
+Gilt g > b, so ist das Bild verkleinert. Gilt g < b, so ist das Bild vergrö\ss{}ert. Nun kann die Brennweite über die Abstände $e = g_1 + b_1 = g_2 + b_2$ und $d = g_1 - b_1 = g_2 - b_2$ bestimmt werden
+\begin{equation}
+	f = \frac{e^2 - d^2}{4e}
+\end{equation}.
+
+\subsection{Methode von Abbe}
+\label{Theorie/Abbe}
+Bei der Methode von Abbe wird der Abbildungsma\ss{}stab verwendet um die Brennweite und die Lage der Hauptebenen zu bestimmen. Die Gegenstandsweite $g$ und die Bildweite $b$ werden relativ zu den Hauptebenen gemessen. Die Lage dieser wird mit einem beliebigen Punkt A gewählt, von dem aus auch die Weiten $g'$ und $b'$ gemessen werden. 
+Mit diesen Abständen gilt:
+\begin{gather}
+	g' = g +h = f\cdot\left(1 + \frac{1}{V}\right) + h \\
+	b' = b + h' = f\cdot(1 + V) + h'
+\end{gather}
+Aus dem Abbildungsma\ss{}stab $V$ und den gemessenen Abständen kann nun die Brennweite $f$ und die Lage der Hauptebenen $H$ und $H'$ bestimmt werden. 

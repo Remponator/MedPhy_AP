@@ -1,0 +1,15 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\select@language {german}
+\contentsline {section}{\numberline {1}Zielsetzung}{3}{section.1}
+\contentsline {section}{\numberline {2}Theorie}{3}{section.2}
+\contentsline {subsection}{\numberline {2.1}Der lichtelektrische Effekt}{3}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Experimentelle Erkenntnisse}{3}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Die Gegenfeldmethode}{4}{subsection.2.3}
+\contentsline {section}{\numberline {3}Aufbau}{6}{section.3}
+\contentsline {section}{\numberline {4}Auswertung}{7}{section.4}
+\contentsline {subsection}{\numberline {4.1}Photostrom - Bremsspannung}{7}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Bestimmung des h/$e_0$ Verhältnisses und der Austrittsarbeit}{15}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Genauere Untersuchung des gelben Spektralbereiches}{17}{subsection.4.3}
+\contentsline {section}{\numberline {5}Diskussion}{17}{section.5}
+\contentsline {section}{\numberline {6}Literatur}{18}{section.6}

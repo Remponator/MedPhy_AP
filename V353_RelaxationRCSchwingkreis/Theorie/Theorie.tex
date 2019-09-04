@@ -1,0 +1,88 @@
+\section{Theorie}
+\subsection{Allgemeine Relaxationsgleichung}
+
+Von Relaxation wird gesprochen, wenn ein System nach Auslenkung ,nicht-oszilllatorisch in seinen Ausgangszustand zurückkehrt. 
+Hier wird ein RC-Kreis, also eine einfache Schaltung aus Widerstand und Kondensator betrachtet.
+Die Änderungsgeschwindigkeit zur Zeit t der Größe A ist proportional zu dessen Abweichung vom Endzustand A($\infty$)
+\begin{equation}
+	\frac{dA}{dt} = c [A(t) - A(\infty)]
+\end{equation}
+Durch Integration folgt:
+\begin{equation}
+	A(t) = A(\infty) + [a(0) - A(\infty)] e^{ct}.
+\end{equation}
+Hier muss c < 0 sein, da A sonst nicht beschränkt ist.
+
+\subsection{Entladung}
+\begin{figure}[h]
+  \centering
+  \includegraphics[height=5cm]{Grafiken/Entladung.pdf}
+  \caption{Entladung (1) und Aufladung (2) eines Kondensators über einen Widerstand, \cite{1}.}
+  \label{fig:Entladung}
+\end{figure}
+Zwischen den beiden Platten eines Kondensators mit Kapazität $C$ und Ladung $Q$ liegt eine Spannung $U_\text{C}$ an:
+\begin{equation}
+	U_\text{C}
+\end{equation}
+Nach dem ohmschen Gesetz folgt der Strom $I$ durch den Widerstand $R$:
+\begin{equation}
+	I = \frac{U_\text{C}}{R}
+\end{equation}
+Zeitlich verändert sich die Ladung $Q$ auf den Platten mit:
+\begin{equation}
+	dQ = - I dt
+\end{equation}
+Somit folgt aus (3),(4) und (5):
+\begin{equation}
+	Q(t) = Q(0)\cdot e^{(-\frac{t}{RC})}
+\end{equation}
+
+\subsection{Aufladung}
+Der Aufladevorgang lässt sich mit der Gleichung
+\begin{equation}
+	Q(t) = CU_0(1-e^{(-\frac{t}{RC})})
+\end{equation}
+beschreiben. RC ist dabei die Zeitkonstante des Relaxationsvorganges. Sie beschreibt die Geschwindigkeit, in der das System dem Endzustand Q($\infty$) zugeht. Während der Zeit $\increment$T = RC ändert sich die Ladung auf dem Kondensator um
+\begin{equation}
+	\frac{Q(t = RC)}{Q(0)} = \frac{1}{e} \approx 0,368 \notag
+\end{equation}
+10$\%$ des Ausgangswertes sind nach $\increment$T = 2,3 RC noch vorhanden, 1 $\%$ nach 4,6 RC.
+
+\subsection{Relaxation bei periodischer Auslenkung}
+Es wird eine äußere Wechselspannung U(t) angelegt:
+\begin{equation*}
+	U(t) = U_0 cos\omega t
+\end{equation*}
+\begin{figure}[h]
+  \centering
+  \includegraphics[height=5cm]{Grafiken/Wechsel.pdf}
+  \caption{Schaltung eines RC-Kreises mit angelegter Wechselspannung, \cite{1}.}
+  \label{fig:Wechsel}
+\end{figure}
+Ist $\omega$ klein genug, also $\omega$<<$\frac{1}{RC}$, so wird die Spannung $U_\text{C}$ gleich U(t) sein. Je höher die Frequenz, desto mehr verschiebt sich die Auf-/Entladung des Kondensators über den Widerstand hinter den Verlauf der Generatorspannung. Es entsteht also eine Phasenverschiebung $\varphi$ zwischen den beiden Spannungen. Zudem nimmt die Amplitude A der Kondensatorspannung ab. Veranschaulicht wird der Vorgang in Abbildung \ref{fig:Wechsel}.
+Die ausgehende Wechselspannung wird nun als 
+\begin{equation}
+	U_\text{C}(t) = A(\omega)cos(\omega t + \varphi(\omega))
+\end{equation}
+beschrieben.
+Zudem gilt:
+\begin{equation}
+	I(t) = \frac{dQ}{dt} = C \frac{dU_\text{C}}{dt}
+\end{equation}
+Über die bisherigen Gleichungen und dem Kirchhoff'schen Gesetz folgt dann:
+\begin{equation}
+	A(\omega) = \frac{U_0}{\sqrt{1+\omega^2 R^2 C^2}}
+\end{equation}
+Diese Gleichung stellt eine Beziehung zwischen Kondensatorspannungs-Amplitude und der Kreisfrequenz der Erregerspannung auf. Für $\omega$ $\rightarrow \infty$ läuft A($\omega$) gegen 0 und für $\omega$ $\rightarrow$ 0 gegen $U_0$. Zudem ist A(1/RC) = $U_0$ / $\sqrt{2}$. 
+Wegen diesen Zusammenhängen nutzt man RC-Kreise in der elektrischen Schaltungstechnik als Tiefpässe, da sie Frequenzen, die klein gegen 1/RC laufen ungehindert hindurchlassen und hohe Frequenzen $\omega$ >> 1/RC schlecht durchlassen. 
+
+\subsection{RC-Kreis als Integrator}
+Ein RC-Kreis kann unter bestimmten Bedingungen auch als Integrator verwendet werden. $\omega$ muss dabei >> 1/RC sein.
+Dann folgt aus
+\begin{equation*}
+	U(t) = RC \frac{dU_\text{C}}{dt}
+\end{equation*}
+unter besagter Voraussetzung:
+\begin{equation}
+	U_\text{C}(t) = \frac{1}{RC} \int_0^t U(t')dt'
+\end{equation}

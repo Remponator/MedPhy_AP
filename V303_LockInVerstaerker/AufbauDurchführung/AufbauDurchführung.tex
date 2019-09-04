@@ -1,0 +1,40 @@
+\section{Aufbau und Durchführung}
+\begin{figure}[H]
+  \centering
+  \includegraphics[height=8cm]{Grafiken/Aufbau.pdf}
+  \caption{Lock-In-Verstärker, \cite{1}.}
+  \label{fig:Verstärker}
+\end{figure}
+In Abbildung \ref{fig:Verstärker} ist die Messaparatur zu sehen. 
+Zu benutzen sind die Vorverstärker, die verschiedenen Filter (Hoch-, Tief- und Bandpass), der Lock-In-Detektor, ein Phasenverschieber, ein Funktionsgenerator, ein Rauschgenerator, sowie ein Tiefpass-Verstärker.
+Zudem können mit einem Speicher-Oszilloskop alle Signale einzeln vermessen und abgespeichert werden.
+\\
+\\
+Zu Beginn wird untersucht, welcher Ausgang des Funktionsgenerators variierbare Spannungsamplituden generiert und welcher Ausgang eine konstante Spannung und wie groß diese ist.
+\\
+\\
+Danach wird die Schaltung aus Abbildung \ref{fig:Aufbau1} aufgebaut.
+\begin{figure}[h]
+  \centering
+  \includegraphics[height=5cm]{Grafiken/Durchführung1.pdf}
+  \caption{Schaltung zur Messung des Ausgangssignals in Phasenabhängigkeit, \cite{1}.}
+  \label{fig:Aufbau1}
+\end{figure}
+Der Noise Generator ist dabei überbrückt, bzw. auf OFF. Es wird eine Sinusspannung $U_\text{sig}$ von ca. 1kHz und 10mV angelegt und mit einem Sinussignal ($U_\text{ref}$) gemischt. Dabei soll vor allem die Ausgangsspannung in Abhängigkeit zur Phasenverschiebung gemessen werden.
+Die Messwerte werden hier jedoch, anders als in der Abbildung \ref{fig:Aufbau1} zu sehen, hinter dem Tiefpass abgegriffen, also nachdem sie durch den Tiefpass gelaufen sind.
+Bei jeder Messung wurde ein Bild des Oszilloskopbildschirms bei verschiedenen Phasenverschiebungen aufgenommen (siehe Auswertung).
+\newpage
+Nun wird ein zusätzliches Rauschsignal mithilfe des Noise Generators angelegt. Dieses Rauschsignal soll in der Größenordnung der Signalspannung liegen. 
+\\
+\\
+Zum Schluss wird eine Photodetektorschaltung wie in Abbildung \ref{fig:Aufbau2} aufgebaut. 
+\begin{figure}[H]
+  \centering
+  \includegraphics[height=4cm]{Grafiken/Durchführung2.pdf}
+  \caption{Schaltung zur Messung der Leuchtstärke der LED in Abhängigkeit zum Abstand $r$, \cite{1}.}
+  \label{fig:Aufbau2}
+\end{figure}
+An die Leuchtdiode (LED) wird eine Rechteckspannung angelegt und somit mit 50 Hz bis 500 Hz zum blinken gebracht. 
+Mithilfe einer Photodiode wird nun die Lichtintensität der LED gemessen. 
+Die Messwerte am Lock-In-Verstärker werden jedoch, wie im vorherigen Versuchsteil, hinter dem Tiefpass abgegriffen.
+Dabei wird der Abstand $r$ zur LED variiert um die Abhängigkeit der Intensität der LED zum Abstand $r$ und den maximalen Abstand $r_\text{max}$, bei dem das Licht nachgewiesen werden kann, zu ermitteln.

@@ -1,0 +1,69 @@
+\section{Zielsetzung}
+
+Im folgenden Versuch wird mithilfe des Frank-Hertz-Versuches die Anregungsenergie ($E_1 - E_0$) von Quecksilber Atomen, sowie deren Ionisationsenergie bestimmt.
+
+\section{Theorie}
+\label{sec:Theorie}
+
+Der Franck-Hertz-Versuch ist ein sogenanntes Elektronensto{\ss}experiment, welches dazu dient, die Energiewerte der Elektronenhülle von Atomen zu bestimmen. Wechselwirken Elektronen mit Atomen, hier Hg-Atome, so kommt es zu elastischen und unelastischen Stö{\ss}en. Dabei nimmt das Quecksilber-Atom Energie auf. Diese Energie kann anhand der Energiedifferenz des Elektrons vor und nach dem Sto{\ss} bestimmt werden. Kommt es zu einem unelastischen Sto{\ss}, so wird das Hg-Atom in seinen ersten angeregten Zustand mit der Energie $E_1$ versetzt. Die Energiedifferenz beträgt dann:
+\begin{equation}
+	\frac{m_0 v^2_\text{vor}}{2} - \frac{m_0 v^2_\text{nach}}{2} = E_1 - E_0
+\end{equation}
+$m_0$ ist dabei die Ruhemasse des Elektrons, $v_\text{vor}$ und $v_\text{nach}$ sind die Geschwindigkeiten des Elektrons vor und nach dem Sto{\ss}. \\
+Mithilfe der Gegenfeldmethode kann diese Energie bestimmt werden. Schematisch ist der Franck-Hertz-Versuch in Abbildung \ref{fig:Schema} abgebildet.
+\begin{figure}[H]
+    \centering
+    \includegraphics[height=4cm]{Theorie/Schema.pdf}
+    \caption{Schematischer Aufbau des Frank-Hertz-Versuches.}
+    \label{fig:Schema}
+\end{figure}
+In dem Gefäß befindet sich Quecksilber, welches verdampft und sich somit ein Gleichgewichtsdampfdruck $p_\text{Sättigung}$ einstellt. Dieser Druck ist nur temperaturabhängig. Mithilfe einen Glühdrahtes werden Elektronen freigesetzt, welche durch eine Beschleunigungsspannung $U_\text{B}$ zu einer netzförmigen Elektrode hin beschleunigt werden. Die Elektronen erhalten somit die kinetische Energie
+\begin{equation}
+	\frac{m_0 v^2_\text{vor}}{2} = e_0 U_\text{b} .
+\end{equation}
+Dies gilt jedoch nur, sofern die Elektronen vorher eine Geschwindigkeit von $v = 0$ besa{\ss}en. 
+Hinter der Beschleunigungselektrode liegt die Auffängerelektrode, welche negativ geladen ist. Die Elektronen werden abgebremst, weshalb nicht alle Elektronen zu der Elektrode gelangen. An der Auffängerelektrode wird ein Auffängerstrom $I_\text{A}$ gemessen. Es gelangen nur die Elektronen zur Auffängerelektrode, deren Geschwindigkeit folgende Ungleichung erfüllt:
+\begin{equation}
+	\frac{m_0}{2}v_\text{z}^2 \geq e_0 U_\text{A}
+\end{equation}
+Die restlichen Elektroden laufen wieder zurück zur Beschleunigungselektrode. \*
+Im sog. Beschleunigungsraum sto{\ss}en die Elektronen mit den Hg-Atomen zusammen, wodurch es bei geringerer Elektronenenergie $E$ zu elastischen, und bei grö{\ss}eren Elektronenenergien zu unelastischen Stö{\ss}en kommt. 
+Bei elastischen Stö{\ss}en ist der Energieverlust $\increment E$ sehr klein:
+\begin{equation}
+	\increment E = \frac{4m_0 M}{(m_0 + M)^2} E \approx 1,1 \cdot 10^{-5} E
+\end{equation}
+Ist die Elektronenenergie jedoch größer oder gleich der Energiedifferenz $E_1 - E_0$, so wird das Quecksilberatom durch einen unelastischen Sto{\ss} angeregt. Das Hg-Atom erhält die Energiedifferenz und emittiert im ersten Zustand ein Photon mit der Energie
+\begin{equation}
+	h\nu = E_1 - E_0 .
+\end{equation}
+Das Atom geht wieder in seinen Grundzustand über. \\
+Mithilfe der Gegenfeldmethode kann nun der Strom $I_\text{A}$ an der Auffängerelektrode beobachtet werden. Sein Verlauf ist in Abbildung \ref{fig:Verlauf} dargestellt.
+\begin{figure}[H]
+    \centering
+    \includegraphics[height=4cm]{Theorie/Verlauf.pdf}
+    \caption{Verlauf des Auffängerstroms $I_\text{A}$ in Abhängigkeit der Beschleunigungsspannung $U_\text{B}$.}
+    \label{fig:Verlauf}
+\end{figure}
+Wird die Beschleunigungsspannung kontinuierlich erhöht, so steigt auch der Strom an. Ab einem gewissen Wert erreichen die Elektronen jedoch einen Energiewert von $E_1 - E_0$, wodurch es zu unelastischen Stö{\ss}en kommt. Nach dem Sto{\ss} können die Elektronen nicht mehr zur Auffängerelektrode gelangen. Wird die Spannung weiter erhöht, so genügt die Energie nach dem Sto{\ss} aus, um zur Auffängerelektrode zu gelangen. Wird nun wieder ein Wert erreicht, bei dem die Elektronen nach dem ersten unelastischen Sto{\ss} noch immer einen Energiewert von $E_1 - E_0$ besitzen, so kommt es zu einem 2. unelastischen Sto{\ss} und die Energie reicht erneut nicht um bis zur Elektrode zu gelangen. Diese Zusammenhänge sind im schematischen Verlauf gut erkennbar. 
+Der Abstand zweier Maxima ist das erste Anregungspotential des Hg-Atoms:
+\begin{equation}
+	U_1 = \frac{1}{e_0}(E_1 - E_0)
+\end{equation}
+\\
+Die mittlere Weglänge $\bar{w}$ muss klein gegen den Abstand zwischen Beschleunigungs- und Auffängerelektrode sein, damit Stö{\ss}e zwischen Elektronen und Hg-Atomen auftreten. Diese Weglänge kann über den Sättigungsdruck $p_\text{Sätt}$ angepasst werden. Der Druck ergibt sich nach
+\begin{equation}
+	p_\text{Sätt} = 5,5 \cdot 10^7 e^{-\frac{6876}{T}} .
+\end{equation}
+Daraus lässt sich die Weglänge bestimmen:
+\begin{equation}
+	\bar{w} = \frac{0,0029}{p_\text{Sätt}}
+\end{equation}
+\\
+Die tatsächlich gemessen Kurve des Stromes $I_\text{A}$ weicht jedoch von der theoretischen Kurve ab. Dafür gibt es verschiedene Ursachen.
+Zum einen weicht das das Beschleunigungspotential von der angelegten Beschleunigungsspannung ab, da der Glühdraht und die Beschleunigungselektrode unterschiedliche Austrittsarbeiten besitzen. Für das effektive Beschleunigungspotential ergibt sich:
+\begin{equation}
+	U_\text{B, eff} = U_\text{B} - \frac{1}{e_0} (\phi_\text{b} - \phi_\text{G})
+\end{equation}
+$\phi$ ist dabei die Austrittsarbeit des Glühdrahtes, bzw. der Beschleunigungselektrode. Der Term $\frac{1}{e_0} (\phi_\text{b} - \phi_\text{G})$ wird als Kontaktpotential $K$ bezeichnet, um das die Kurve verschoben ist. \*
+Die Elektronen sind zudem hinter der Beschleunigskathode nicht monoenergetisch. Vielmehr besitzen die Elektronen eine Energieverteilung, weshalb die unelastischen Stö{\ss}e nicht bei einer bestimmten Beschleunigungsspannung auftreten. Somit flacht die Kurve ab und verbreitert sich. \*
+Und auch der Dampfdruck $p_\text{Sätt}$ beeinflusst das Aussehen der Kurve. Da wie bereits erwähnt die mittlere Weglänge sehr klein gewählt sein muss, wird ein konstanter Dampfdruck benötigt. Fällt dieser jedoch ab, sinkt auch die Wahrscheinlichkeit für Zusammenstö{\ss}e. Wird der Druck zu hoch, so treten mehr Stö{\ss}e auf, wodurch noch weniger Elektronen die Auffängerelektrode erreichen.

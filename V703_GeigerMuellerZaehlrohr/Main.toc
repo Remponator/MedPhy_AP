@@ -1,0 +1,19 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\select@language {german}
+\contentsline {section}{\numberline {1}Zielsetzung}{3}{section.1}
+\contentsline {section}{\numberline {2}Theorie}{3}{section.2}
+\contentsline {subsection}{\numberline {2.1}Der Aufbau}{3}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Die Wirkungsweise}{3}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Der Einfluss der positiven Ionen}{5}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.4}Charakteristik des Zählrohrs}{6}{subsection.2.4}
+\contentsline {subsection}{\numberline {2.5}Ansprechvermögen des Zählrohrs}{6}{subsection.2.5}
+\contentsline {section}{\numberline {3}Durchführung}{6}{section.3}
+\contentsline {section}{\numberline {4}Auswertung}{7}{section.4}
+\contentsline {subsection}{\numberline {4.1}Charakteristik}{7}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Totzeit}{10}{subsection.4.2}
+\contentsline {subsubsection}{\numberline {4.2.1}Ablesen des Oszilloskops}{10}{subsubsection.4.2.1}
+\contentsline {subsubsection}{\numberline {4.2.2}Zwei-Quellen-Methode}{11}{subsubsection.4.2.2}
+\contentsline {subsection}{\numberline {4.3}Freigesetzte Ladung}{12}{subsection.4.3}
+\contentsline {section}{\numberline {5}Diskussion}{14}{section.5}
+\contentsline {section}{\numberline {6}Literatur}{14}{section.6}

@@ -1,0 +1,19 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\contentsline {section}{\numberline {1}Theorie}{3}{section.1}
+\contentsline {subsection}{\numberline {1.1}Allgemeine Relaxationsgleichung}{3}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}Entladung}{3}{subsection.1.2}
+\contentsline {subsection}{\numberline {1.3}Aufladung}{4}{subsection.1.3}
+\contentsline {subsection}{\numberline {1.4}Relaxation bei periodischer Auslenkung}{4}{subsection.1.4}
+\contentsline {subsection}{\numberline {1.5}RC-Kreis als Integrator}{5}{subsection.1.5}
+\contentsline {section}{\numberline {2}Aufbau und Durchführung}{5}{section.2}
+\contentsline {subsection}{\numberline {2.1}Bestimmung der Zeitkonstante}{5}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Bestimmung der Spannungsamplitude}{6}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Bestimmung der Phasenverschiebung}{6}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.4}Bestätigung der Integratorfunktion}{6}{subsection.2.4}
+\contentsline {section}{\numberline {3}Auswertung}{7}{section.3}
+\contentsline {subsection}{\numberline {3.1}Entladevorgang}{7}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Frequenzabhängigkeit der Amplitude}{8}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Phasenverschiebung}{10}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.4}Integrität}{12}{subsection.3.4}
+\contentsline {section}{\numberline {4}Diskussion}{15}{section.4}
+\contentsline {section}{\numberline {5}Literatur}{15}{section.5}
