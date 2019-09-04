@@ -1,0 +1,148 @@
+\section{Theorie}
+
+Wirken Kräfte auf einen Festkörper ein, so kann es zu Gestalts- und Volumenänderungen kommen. 
+Zudem wird unterschieden zwischen Volumenkräften, die die Bewegung eines Körpers beeinflussen können (Translation / Rotation), und Oberflächenkräften, die lediglich Gestalts-/Volumenänderungen hervorrufen.
+
+Beschrieben wird die Kraft durch die Größe Spannung (Kraft/Fläche). Die senkrecht dazu verlaufende Komponente wird als Normalspannung $\sigma$ oder Druck $P$ bezeichnet. Die zur Spannung oberflächenparallel Verlaufende Komponente wird als Tangential-/Schubspannung $\tau$ bezeichnet. Diese Oberflächenkräfte lassen sich an jeder Querschnittsfläche des Körpers messen.
+Nimmt der Körper nach Einwirken der Kraft seine vorherige Form wieder an, so handelt es sich um eine elastische Deformation.
+Bei kleinen Spannungen gilt das Hookesche Gesetz:
+
+\begin{equation}
+	\sigma = E\frac{\increment L}{L}
+\end{equation}
+\begin{equation}
+	P = Q\frac{\increment V}{V}
+\end{equation}
+
+Hierbei ist $L$ die Länge und $V$ das Volumen des Körpers.
+
+Der im Experiment verwendete Körper ist isotrop, das heisst, die elastischen Konstanten sind richtungsunabhängig.
+Zwei Konstanten können somit das Verhalten des Körpers vollständig beschreiben. Aus praktischen Gründen werden jedoch vier Konstanten verwendet. Das Torsionsmodul $G$, als Größe für die Gestaltselastizität, das Kompressionsmodul $Q$, als Größe für die Volumenelastizität. Zudem das Elastizitätsmodul $E$, als relative Längenänderung in Normalspannungsrichtung, und die Possonsche Querkontraktionszahl $\mu$, welche die relative Längenänderung senkrecht zur Normalspannung beschreibt.
+
+\begin{equation}
+	\mu:= -\frac{\increment B}{B} \cdot \frac{L}{\increment L}
+\end{equation}
+
+$B$ ist die Dicke und $L$ die Länge des Körpers.
+
+Es ergibt sich folgender Zusammenhang zwischen den vier Konstanten:
+
+\begin{equation}
+	E = 2G(\mu + 1)
+\end{equation}
+\begin{equation}
+	E = 3(1-2\mu)Q
+\end{equation}
+
+\subsection{Bestimmung des Torsionsmoduls}\label{sec:torsionsmodul}
+
+Wirken auf einen Körper Tangentialspannungen so kommt es zu einer Scherung. Die Grundflächen werden dabei leicht verschoben, die Oberfläche bleibt jedoch gleich. Der Zusammenhang zwischen Schubspannung $\tau$ und Scherungswinkel $\alpha$ kann beschrieben werden durch:
+
+\begin{equation}
+	\tau = G \alpha
+\end{equation}
+
+Genauer lässt sich G mithilfe der Torsion eines zylindrischen Drahtes ermitteln.
+Wird der Draht an einer Seite befestigt und greifen an der anderen Seite zwei diametrale Kräfte an, so wirkt ein Drehmoment $M$ \ref{fig:Torsion}.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[height=5cm]{Grafiken/Torsion.pdf}
+  \caption{Torsion eines Drahtes, \cite{1}.}
+  \label{fig:Torsion}
+\end{figure}
+
+Die untere Fläche wird nun um den Winkel $\rho$ verdreht. Für das Drehmoment am Kreisring mit Radius r gilt dann:
+
+\begin{equation}
+	dM = r dK
+\end{equation}
+
+Aus $\tau = \frac{dK}{dF}$ folgt 
+
+\begin{equation}
+	dM = r\cdot D\cdot \alpha dF
+\end{equation}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[height=5.5cm]{Grafiken/Herleitung.pdf}
+  \caption{Zusammenhang Drehmoment M und Drehwinkel $\rho$ \cite{1}.}
+  \label{fig:Herleitung}
+\end{figure}
+
+
+Aus \ref{fig:Herleitung} erkennt man, dass $\alpha = \frac{r\rho}{L}$ gilt. Damit erhält man für M
+
+\begin{equation}
+	M = \frac{\pi}{2}G\frac{R^4}{L}\rho
+\end{equation} 
+
+Es wird der Proportionalitätsfaktor $D$, auch Richtgröße des Zylinders gennant, definiert als
+
+\begin{equation}
+	D := \frac{\pi G R^4}{2L}
+\end{equation}
+
+
+Aufgrund von elastischer Nachwirkung bei dieser Methode, also dass die Deformation eines Körpers nach Ende des Einwirkens der Kräfte nicht direkt vollkommen zurückgeht, wird die sog. dynamische Methode angewandt. Das System wird durch eine Kugel mit Trägheitsmoment $\theta$ am Draht ergänzt. Dies führt dazu, dass das System schwingfähig wird.
+
+Mit $\theta_{Kugel} = \frac{2}{5}m_k R_k^2$ und (11) erhält man somit für das Schubmodul G
+
+\begin{equation}
+	G = \frac{16}{5}\pi \frac{m_k R_k^2 L}{T^2 R^4}
+\end{equation}
+
+Hierbei ist $T = 2\pi \sqrt{\frac{\theta}{D}}$.
+
+\subsection{Bestimmung des Elastizitätsmoduls}
+
+Mithilfe eines Schallimpulses durch einen dünnen langen kann das Elastizitätsmodul eines Körpers bestimmt werden.
+
+\begin{equation}
+	c^2 = \frac{E}{\rho}
+\end{equation}
+
+$\rho$ beschreibt hierbei die Dichte des Körpers.
+
+\newpage
+
+\subsection{Magnetische Moment}
+
+Das magnetische Moment $\vec{m}$ kann als Produkt der Polstärke $p$ und dem Abstand $\vec{a}$ zwischen den beiden Polen des Permanentmagneten beschrieben werden.
+
+\begin{equation}
+	\vec{m} = p\cdot \vec{a}
+\end{equation}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[height=3cm]{Grafiken/Permanentmagnet im homogenen Magnetfeld.pdf}
+  \caption{Permanentmagnet im homogenen Magnetfeld \cite{1}.}
+  \label{fig:Permanentmagnet}
+\end{figure}
+
+In einem homogenen Magnetfeld mit Flussdichte $\vec{B}$ wirken die beiden Kräfte $\vec{K_\text{N}}$ und $\vec{K_\text{S}}$ (siehe Abb.:3). Daraus folgt das Drehmoment $\vec{M_\text{Mag}}$
+
+\begin{equation}
+	\vec{M_\text{Mag}} = p\vec{a} \times \vec{B} = \vec{m} \times \vec{B}
+\end{equation}
+
+Das Magnetfeld $\vec{B}$ wird hierbei durch ein Helmoltzspulenpaar erzeugt. Aus dem Spulenradius und -abstand $R$ und dem Strom $I$ ergibt sich für $\vec{B}$ in der Mitte der Helmoltzspule somit:
+
+\begin{equation}
+	B(0)=\frac{\mu_0 I R^2}{(R^2+x^2)^\frac{3}{2}}
+\end{equation}
+
+$x$ ist der halbe Abstand $R$. \\
+
+Wird das in \ref{sec:torsionsmodul} beschriebene System, mit einem Magneten in der Kugel, in Schwingung versetzt, so führt die Lösung der Schwingungsgleichung zu
+
+\begin{equation}
+	T_m = 2\pi\sqrt{\frac{\theta}{mB+D}}
+\end{equation}
+
+$T_m$ ist die, durch das zusätzliche Drehmoment, geänderte Periodendauer.
+
+
+

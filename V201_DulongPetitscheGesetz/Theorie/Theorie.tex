@@ -1,0 +1,72 @@
+\section{Zielsetzung}
+Das Ziel dieses Versuchs ist es, das Dulong-Petitsche Gesetz auf seine Richtigkeit im Bezug auf die klassische Physik und die Quantenmechanik überprüft.
+
+\section{Theorie}
+\subsection{Klassiche Theorie}
+Zur Einführung in die klassische Theorie des Dulong-Petitschen Gesetzes wird die Wärmemenge $\Delta Q$, die ein Körper aufnimmt, wenn sich seine Temperatur um $\Delta T$ verändert ohne, dass an ihm Arbeit verrichtet wird, gebildet.
+\begin{equation}
+    \Delta Q = m \cdot c \cdot \Delta T
+\end{equation}
+Außerdem wird die spezifische Wärmekapazität $c$ definiert, die auf die Masseneinheit bezogen ist.
+Diese ist von der Beschaffenheit des Materials abhängig und hat eine Dimension von $\frac{J}{kg \cdot K}$.
+Eine weitere wichtige Größe ist die Molwärme $C$, die die benötige Wärmemenge $dQ$ angibt um ein Mol eines Stoffes um $dT$ zu erwärmen.
+Dabei wird zwischen einerseits der Molwärme bei konstantem Volumen $C_V$ und andererseits bei konstantem Druck $C_p$ unterschieden.
+\begin{equation}
+    C_V = \left (\frac{dU}{dT} \right )_V
+\end{equation}
+Der Zusammenhang der Molwärme bei konstantem Druck bzw. konstantem Volumen wird folgendermaßen beschrieben.
+\begin{equation}
+    C_V \cdot C_p = 9\; \alpha^{2}\; \kappa \;V_0 \;T
+\end{equation}
+Hierbei beschreibt $\alpha$ den linearen Ausdehnungskoeffizienten, $\kappa$ das Kompressionsmodul und $V_0$ das Molvolumen.
+Das Dulong-Petitsche Gesetz besagt, dass der Betrag der Molwärme $C_V$ unabhängig von der chemischen Beschaffenheit des Elements einen Wert von $3R$ aufweist, wobei $R$ die ideale Gaskonstante ist.
+Aus der Annahme der Gitterkräfte in einem Festkörper und dem Hookschen Gesetz ergibt sich folgende Differentialgleichung.
+\begin{equation}
+    m \frac{d^{2}x}{dt^{2}} = -Dx
+\end{equation}
+Die Gleichung (3) beschreibt eine ungedämpfte harmonische Schwingung besitzt die folgende Lösung.
+\begin{equation}
+    x(t) = A \; cos \left (\frac{2\pi}{\tau}t \right )
+\end{equation}
+Dabei beschreibt $\tau$ die Periodendauer und $A$ die Amplitude der Schwingung.
+Aus der Integration des Hookschen Gesetzes wird die potentielle Energie $E_\text{pot}$ berechnet.
+Um die mittlere potentielle Energie zu bestimmen wird die Lösung der Differentialgleichung in die folgende Gleichung eingesetzt.
+\begin{equation}
+    \langle	E_\text{pot}\rangle = \frac{1}{\tau} \int_0^\tau \! \frac{1}{2} D \; x^{2}(t) dt
+\end{equation}
+Bei der kinetischen Energie wird die Trägheitskraft eines Körpers mit der Masse $m$ integriert und wieder über die Periodendauer $\tau$ gemittelt.
+\begin{equation}
+    \langle E_\text{kin} \rangle = \frac{1}{\tau} \int_0^\tau \! \frac{1}{2} m \left ( \frac{dx(t)}{dt}\right )^{2} dt 
+\end{equation}
+Hierbei ergeben sich für beide mittlere Energien $E_\text{pot}$ und $E_\text{kin}$ identische Werte.
+\begin{equation}
+    \langle E_\text{pot} \rangle = \langle E_\text{kin} \rangle = \frac{1}{4} D A^{2}
+\end{equation}
+Somit ergibt sich für die innere Energie eines Atoms unter der Berücksichtigung des Äquipartitionstheorems, welches die kinetische Energie eines Atoms im thermischen Gleichgewicht pro Freiheitsgrad auf $\frac{1}{2}kT$ bestimmen lässt, Folgendes.
+\begin{equation}
+    \langle u_\text{kl} \rangle = \langle E_\text{pot} \rangle + \langle E_\text{kin} \rangle = 2 \langle E_\text{kin} \rangle = kT
+\end{equation}
+Die mittlere Energie eines Mols, also $N_L$ Atome, wobei $N_L$ die Loschmidtsche Zahl beschreibt, wird aufgrund der drei Freiheitsgrade jedes Atoms für Festkörper folgendermaßen berechnet.
+\begin{equation}
+    \langle U_\text{kl} \rangle = 3 \cdot N_L \cdot \langle u \rangle = 3 N_L k T = 3 R T
+\end{equation}
+Die Molwärme bei konstantem Volumen hat daher erwartungsgemäß einen theoretischen Wert von $C_V = 3R$.
+
+\subsection{Abweichung zur klassischen Physik}
+Der Widerspruch der Quantenmechanik besagt im Gegensatz zur klassichen Physik, dass ein harmonischer Oszillator, der mit einer Frequenz $\omega$ schwingt, nur diskrete Energiewerte abgeben bzw. aufnehmen.
+Diese Energien haben einen Betrag von $\Delta u = n \hbar \omega$, wobei $n$ aus den natürlichen Zahlen stammt.
+Zur Bestimmung der mittleren Energie muss nun über die diskreten Energiewerte multipliziert mit der Auftreffwahrscheinlichkeit $\psi$ integriert und diese dann summiert werden.
+$\psi$ ist dabei durch die Boltzmann-Verteilung festgelegt.
+Nach der Integration und der Aufsummierung folgt durch eine geometrische Reihe mit $exp \left (-\frac{\hbar \omega}{kT} \right )$.
+\begin{equation}
+    \langle U_\text{qu} \rangle = \frac{3 N_L \hbar \omega}{exp \left (\frac{\hbar \omega}{kT} \right ) -1}
+\end{equation}
+Für ein Mol des Festkörpers wird aus den drei Freiheitsgraden und der Loschmidtschen Zahl die mittlere innere Energie bestimmt.
+Aus der Taylorentwicklung für die Exponentialfunktion ergibt sich, dass sich $\langle U_\text{qu} \rangle$ für $T \rightarrow 0$ Null nähert.
+Für $T \rightarrow \infty$ allerdings strebt die innere Energie gegen den klassich berechneten Wert.
+\begin{equation}
+    \lim_{T\to\infty} \langle U_\text{qu} \rangle \approx \langle U_\text{kl} \rangle = 3RT
+\end{equation}
+Dabei wird deutlich, dass die klassische Rechnung nur bei $kt \gg \hbar \omega$ aufgeht.
+Außerdem erklärt dieses Verhältnis die Näherung, dass bei kleineren Massen von Atomen höhere Energien gebraucht werden um die Näherung zu erfüllen.
+Des Weiteren kann das Spektrum der Eigenfrequenzen, die der Kristall modifiziert, vernachlässigt werden, da dies nur bei tiefen Temperaturen Einfluss hat.

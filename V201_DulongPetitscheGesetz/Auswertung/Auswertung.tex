@@ -1,0 +1,133 @@
+\section{Auswertung}
+\subsection{Wärmekapazität des Kalorimeters}
+Zur Berechnung der Wärmekapazität $c_\text{g}m_\text{g}$ des Kalorimeters wird Gleichung (1) zu
+\begin{equation*}
+	c_\text{g}m_\text{g}=\frac{c_\text{w}m_\text{h}(T_\text{h}-T_\text{M})-c_\text{w}m_\text{k}(T_\text{M}-T_\text{k}}{T_\text{M}-T_\text{k})}
+\end{equation*}
+umgeformt und folgende Messwerte verwendet:
+\begin{table} [H]
+	\centering
+	\caption{Messdaten für Bestimmung der Wärmekapazität des Kalorimeters.}
+	\label{tab:1}
+	\sisetup{table-format=4.2}
+	\begin{tabular}{S[table-format=4.2]SSSS}
+		\toprule
+		{$T_\text{kalt}/\text{K}$}&{$T_\text{heiss}/\text{K}$}&{$T_\text{Misch}/\text{K}$}&{$m_\text{kalt}/\text{g}$}&{$m_\text{heiss}/\text{g}$} \\
+		\midrule
+		260,1&337,5&286,7&344,1&237,7\\
+		262,9&337,5&287,9&296,1&179,6\\
+		262,8&337,5&292,2&267,4&198,9\\
+		\bottomrule 
+	\end{tabular}
+\end{table} 
+Die spezifische Wärmekapazität $c_\text{w}$ ist aus [1] bekannt und lautet
+\begin{equation*}
+	c_\text{w} = \SI{4,18}{\joule\per\gram\kelvin}.
+\end{equation*}
+So ergibt sich
+\begin{equation*}
+	c_\text{g}m_\text{g} = \SI{290 \pm 90}{\joule\per\kelvin}.
+\end{equation*}
+Der Mittelwert wurde hierbei anhand der Formel 
+\begin{equation} \label{Mittel}
+	\overline{x} = \frac{1}{n} \sum_{i=1}^n x_i
+\end{equation}
+bestimmt. Die Abweichung $\sigma$ mit $i = 1,...,n$
+\begin{equation}\label{Abw}
+	\sigma_i = \frac{s_i}{\sqrt{n}} = \sqrt{\frac{\sum_{j=1}^n (v_j - \overline{v_i})^2}{n*(n-1)}}.
+\end{equation}	
+
+\subsection{Spezifische Wärmekapazität von Aluminium und Blei}
+Die Berechnung der Wärmekapazitäten $c_\text{K}$ von Aluminium und Blei erfolgen anhand der Gleichung (1).
+Es ergibt sich die Gleichung
+\begin{equation}\label{ck}
+	c_\text{k}=\frac{(c_\text{W}m_\text{W}+c_\text{g}m_\text{g})(T_\text{M}-T_\text{W})}{m_\text{P}(T_\text{P}-T_\text{M})}
+\end{equation}
+Bei den Messungen ergeben sich für Aluminium folgende Werte:
+\begin{table} [H]
+	\centering
+	\caption{Messdaten für Bestimmung der Wärmekapazität von Aluminium.}
+	\label{tab:2}
+	\sisetup{table-format=4.2}
+	\begin{tabular}{S[table-format=4.2]SSSS}
+		\toprule
+		{$T_\text{Wasser}/\text{K}$}&{$m_\text{Wasser}/g$}&{$T_\text{Probe,A}/\text{K}$}&{$m_\text{Probe,A}/\text{g}$}&{$T_\text{Misch}/\text{K}$} \\
+		\midrule
+		262,1&659,2&373,5&155,0&301,2\\
+		260,1&638,4&373,5&155,0&299,6\\
+		259,6&617,0&373,5&155,0&299,4\\
+		\bottomrule 
+	\end{tabular}
+\end{table} 
+Somit ergeben sich drei verschiedene Wärmekapazitäten:
+\begin{gather*}
+	c_\text{K,1} = \SI{0,6899 \pm 0,0199}{\joule\per\gram\kelvin} \\
+	c_\text{K,2} = \SI{0,6652 \pm 0,0197}{\joule\per\gram\kelvin} \\
+	c_\text{K,3} = \SI{0,6472 \pm 0,0198}{\joule\per\gram\kelvin} \\
+\end{gather*}
+Mit den Gleichungen \ref{Mittel} und \ref{Abw} ergibt sich dann für die Wärmekapazität von Aluminium der ungefähre Wert
+\begin{equation*}
+	c_\text{K} = \SI{0,667 \pm 0,02}{\joule\per\gram\kelvin}.
+\end{equation*}
+
+Zur Berechnung der Wärmekapazität von Aluminium wird analog mit folgenden Messwerten verfahren.
+\begin{table} [H]
+	\centering
+	\caption{Messdaten für Bestimmung der Wärmekapazität von Blei.}
+	\label{tab:3}
+	\sisetup{table-format=4.2}
+	\begin{tabular}{S[table-format=4.2]SSSS}
+		\toprule
+		{$T_\text{Wasser}/\text{K}$}&{$m_\text{Wasser}/g$}&{$T_\text{Probe,B}/\text{K}$}&{$m_\text{Probe,B}/\text{g}$}&{$T_\text{Misch}/\text{K}$} \\
+		\midrule
+		260,4&615,7&373,5&542,7&298,5\\
+		260,1&628,53&373,5&542,7&298,1\\
+		259,5&627,27&373,5&542,7&297,9\\
+		\bottomrule 
+	\end{tabular}
+\end{table} 
+Es ergeben sich analog die drei verschiedenen Wärmekapazitäten:
+\begin{gather*}
+	c_\text{K,1} = \SI{0,1780 \pm 0,0055}{\joule\per\gram\kelvin} \\
+	c_\text{K,2} = \SI{0,1802 \pm 0,0054}{\joule\per\gram\kelvin} \\
+	c_\text{K,3} = \SI{0,1808 \pm 0,0054}{\joule\per\gram\kelvin} \\
+\end{gather*}
+Und somit der gemittelte Wert
+\begin{equation*}
+	c_\text{K} = \SI{0,180 \pm 0,005}{\joule\per\gram\kelvin}.
+\end{equation*}
+
+\subsection{Molwärme von Aluminium und Blei}
+Die Molwärme $C$ von Aluminium und Blei kann mithilfe von Gleichung (3) berechnet werden.
+Es ergibt sich die Formel
+\begin{equation}
+	C_\text{V} = c_\text{K}\cdot M-9\alpha^2\kappa\frac{M}{\rho}T_\text{M}
+\end{equation}
+Die Werte M, $\alpha$, $\kappa$ und $\rho$ werden für den jeweiligen Wert der Tabelle aus Abbildung \ref{fig:Konst} entnommen.
+\begin{figure}[H]
+    \centering
+    \caption{Konstanten zur Bestimmung der Molwärme [1].}
+    \includegraphics[height=6cm]{Auswertung/Konst.pdf}
+    \label{fig:Konst}
+\end{figure}
+Die restlichen Werte werden den vorherigen Rechnungen entnommen. 
+Somit ergeben sich die folgenden Werte für die Molarwärme von Aluminium:
+\begin{gather*}
+	c_\text{v,1} = \SI{186,24 \pm 5,37}{\joule\per\text{mol}\kelvin}\\
+	c_\text{v,2} = \SI{179,55 \pm 5,33}{\joule\per\text{mol}\kelvin}\\
+	c_\text{v,3} = \SI{174,69 \pm 5,34}{\joule\per\text{mol}\kelvin}\\
+\end{gather*}
+Nach den Gleichungen \ref{Mittel} und \ref{Abw} ergibt sich dann ungefähr
+\begin{equation*}
+	c_\text{v,Aluminium} = \SI{18,016 \pm 0,534}{\joule\per\text{mol}\kelvin}.
+\end{equation*}
+Analog folgen für Blei die Werte
+\begin{gather*}
+	c_\text{v,1} = \SI{36,846 \pm 1,129}{\joule\per\text{mol}\kelvin}\\
+	c_\text{v,2} = \SI{37,337 \pm 1,123}{\joule\per\text{mol}\kelvin}\\
+	c_\text{v,3} = \SI{37,464 \pm 1,129}{\joule\per\text{mol}\kelvin}\\
+\end{gather*}
+Und somit der ungefähre Wert
+\begin{equation*}
+	c_\text{v,Blei} = \SI{37,216 \pm 1,127}{\joule\per\text{mol}\kelvin}.
+\end{equation*}

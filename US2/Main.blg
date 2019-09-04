@@ -1,0 +1,15 @@
+[0] Config.pm:302> INFO - This is Biber 2.11
+[0] Config.pm:305> INFO - Logfile is 'Main.blg'
+[48] biber-darwin:313> INFO - === Tue Jun 25, 2019, 13:51:21
+[74] Biber.pm:371> INFO - Reading 'Main.bcf'
+[196] Biber.pm:854> INFO - Using all citekeys in bib section 0
+[215] Biber.pm:3976> INFO - Processing section 0
+[229] Biber.pm:4136> INFO - Looking for bibtex format file 'lit.bib' for section 0
+[230] bibtex.pm:1500> INFO - LaTeX decoding ...
+[235] bibtex.pm:1316> INFO - Found BibTeX data source 'lit.bib'
+[257] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[257] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[258] Biber.pm:3804> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'de-DE'
+[258] Biber.pm:3810> INFO - No sort tailoring available for locale 'de-DE'
+[267] bbl.pm:617> INFO - Writing 'Main.bbl' with encoding 'UTF-8'
+[268] bbl.pm:720> INFO - Output to Main.bbl

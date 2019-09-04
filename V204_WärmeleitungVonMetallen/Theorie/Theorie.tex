@@ -1,0 +1,36 @@
+\section{Zielsetzung}
+In diesem Versuch soll die Wärmeleitung von Aluminium, Messing und Edelstahl und die stoffspezifischen Wärmeleitfähigkeiten untersucht werden.
+Dazu wird eine statische und eine dynamische Methode durchgeführt (siehe Durchführung).
+
+\section{Theorie}
+Jeder Körper strebt einem Temperaturgleichgewicht entgegen. Dieses Temperaturgleichgewicht wird durch Konvektion, Wärmestrahlung oder Wärmeleitung entlang des Temperaturgefälles erreicht. 
+Dieser Vorgang kann bei einem Stab der Länge L, einer Querschnittsfläche A, der Materialdichte $\rho$ und der spezifischen Wärme $c$ beschrieben werden als
+\begin{equation}
+	\text{d}Q = -\kappa \frac{\partial T}{\partial x} \text{d}t .
+\end{equation}
+Die Wärmemenge Q fließt also immer in Richtung abnehmender Temperatur.
+$\kappa$ beschreibt die (materialabhängige) Wärmeleitfähigkeit. 
+Für die Wärmestromdichte $j_\text{\omega}$ gilt
+\begin{equation}
+	j_\text{\omega} = -\kappa \frac{\partial T}{\partial x}
+\end{equation}
+Daraus ergibt sich mithilfe der Kontinuitätsgleichung die eindimensionale Wärmeleitungsgleichung
+\begin{equation}
+	\frac{\partial T}{\partial t} = \frac{\kappa}{\rho c} \frac{\partial^2 T}{\partial x^2}
+\end{equation}
+Die Wärmeleitungsgleichung beschreibt die räumliche und zeitliche Entwicklung der Temperaturverteilung im Körper. 
+Der Term $\sigma_\text{T} = \frac{\kappa}{\rho c}$ beschreibt die Temperaturleitfähigkeit. 
+Bei periodischer Erwärmung / Abkühlung des Stabes, entsteht eine Temperaturwelle mit der Form
+\begin{equation}
+	T(x,t) = T_\text{max} e^{-\sqrt{\frac{\omega \rho c}{2\kappa}}x}cos\biggl(\omega t - \sqrt{\frac{\omega \rho c}{2\kappa}}x \biggr)
+\end{equation}
+Die Phasengeschwindigkeit dieser Welle ist
+\begin{equation}
+	v = \frac{\omega}{k} = \frac{\omega}{\sqrt{\frac{\omega \rho c}{2\kappa}}} = \sqrt{\frac{2\kappa \omega}{\rho c}} .
+\end{equation}
+Durch Umformung und dem Verhältnis der Amplituden $A_\text{nah}$ und $A_\text{fern}$ der Welle an den Messstellen $x_\text{nah}$ und $x_\text{fern}$ ergibt sich
+\begin{equation}
+	\kappa = \frac{\rho c (\increment x)^2}{2\increment t \cdot ln(A_\text{nah} / A_\text{fern})}
+\end{equation}
+Dies ist die Wärmeleitfähigkeit. 
+$\increment x$ ist dabei der Abstand der beiden Messstellen und $\increment t$ die Phasendifferenz der Temperaturwelle zwischen den Messstellen.

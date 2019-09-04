@@ -1,0 +1,34 @@
+
+\section{Zielsetzung}
+Das Ziel dieses Versuchs ist es, die dynamische Viskosität von destilliertem Wasser zu bestimmen.
+Dafür wird die Temperaturabhängigkeit berücksichtigt und untersucht.
+
+\section{Theorie}
+Die dynamische Viskosität $\eta$ beschreibt die Eigenschaft einer Flüssigkeit, einen Widerstand für einen sich durch die Flüssigkeit bewegenden Körpers darzustellen.
+Diese ist dabei sehr temperaturabhängig und ist von der Geschwindigkeit $v$ und der Berührungsfläche $A$ abhängig.
+Zur Bestimmung der Viskosität wird das Kugelfall-Viskosimeter nach Höppler verwendet.
+Der oben beschriebene Widerstand wird durch Reibung ausgelöst, die Stokessche Reibung.
+Am Beispiel einer Kugel, die im Viskosimeter verwendet wird, ergibt sich folgender Zusammenhang:
+\begin{equation}
+    F_R = 6  \; \pi \; \eta \; v \; r
+\end{equation}.
+Zusätzlich zu der Reibungskraft $\vec{F}_R$ wirken die Gewichtskraft $\vec{F}_G$ und die Auftriebskraft $\vec{F}_A$, die der Gewichtskraft entgegenwirkt.
+Da die Reibungskraft mit wachsender Geschwindigkeit auch größer wird, stellt sich nach einer bestimmten Zeit ein Kräftegleichgewicht ein, wodurch sich die Kugel mit einer konstanten Geschwindigkeit weiterbewegt.
+Die dynamische Viskosität lässt sich dann aus der Dichte der Kugel $\rho_\text{K}$, der Dichte der Flüssigkeit $\rho_\text{Fl}$, der Fallzeit $t$ und der Apparaturkonstante $K$ nach
+\begin{equation}
+    \eta = K \cdot (\rho_K-\rho_\text{Fl}) \cdot t
+\end{equation} 
+bestimmen.
+Dabei setzt sich $K$ unter Anderem aus der Fallhöhe und der Kugelsymmetrie zusammen.
+Zusätzlich lässt sich aufgrund der starken Temperaturabhängigkeit der dynamischen Viskosität die Andradsche Gleichung aufstellen.
+\begin{equation}
+    \eta \:(T) = A \cdot exp \left (\frac{B}{T} \right )
+\end{equation}
+Hinzufügend wird die Reynoldszahl für das Fallrohr bestimmt, die angibt ob eine laminare oder turbulente Strömung vorliegt.
+Dazu wird folgende Gleichung verwendet.
+\begin{equation}
+    Re = \frac{\rho \cdot v \cdot d}{\eta}
+\end{equation}
+Hierbei ist $v$ die Geschwindigkeit der fallenden Kugel, $d$ der Durchmesser der Kugel und $\eta$ die Viskosität der Flüssigkeit.
+Dabei wird der Wert $Re_\text{krit} \approx 2300$ definiert, ab dem die Strömung von einer laminaren auf eine turbulente Strömung wechselt.
+

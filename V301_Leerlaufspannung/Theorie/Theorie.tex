@@ -1,0 +1,55 @@
+\section{Zielsetzung}
+In diesem Versuch soll die Leerlaufspannung und der Innenwiderstand verschiedener Spannungsquellen gemessen werden.
+
+\section{Theorie}
+Wird einer Spannungsquelle kein Strom entnommen, so wird von einer Leerlaufspannung $U_0$ an der Ausgangsklemme gesprochen. 
+Fließt über einen äußeren Lastwiderstand $R_\text{a}$ ein endlicher Strom $I$, so kann an der Klemme eine Klemmenspannung $U_\text{k}$ gemessen werden, welche unter dem Wert $U_0$ liegt. Erklärt werden kann dies anhand eines Innenwiderstandes $R_\text{i}$ (siehe Abbildung \ref{fig:Skizze}) der Spannungsquelle. Aus dem Kirchhoff'schen Gesetz
+\begin{equation}
+	U_0 = I R_\text{i} + I R_\text{a} \notag
+\end{equation}
+folgt somit für die Klemmenspannung
+\begin{equation}
+	U_\text{k} = I R_\text{a} = U_0 - I R_\text{i}
+\end{equation}
+Wird $R_\text{a}$ nun groß gewählt, wird der Strom $I$ klein und es kann die Vereinfachung 
+\begin{equation}
+	U_\text{k} \approx U_0
+\end{equation}
+verwendet werden.
+\begin{figure}[h]
+  \centering
+  \includegraphics[height=5cm]{Grafiken/Skizze.pdf}
+  \caption{Ersatzschaltbild einer realen Spannungsquelle mit Lastwiderstand $R_\text{a}$, \cite{1}.}
+  \label{fig:Skizze}
+\end{figure}
+Aufgrund des Innenwiderstandes $R_\text{i}$ kann der idealen Spannungsquelle nicht unendlich viel Leistung entnommen werden. 
+Die ideale Spannungsquelle hat hierbei die Eigenschaft, eine unabhängige Spannung $U_0$, ohne Innenwiderstand $R_\text{i}$, zu liefern.
+Die an $R_\text{a}$ abgegebene Leistung kann nun durch 
+\begin{equation}
+	N = I^2R_\text{a}
+\end{equation}
+berechnet werden.
+Dabei durchläuft die Leistung N ein Maximum, welches bei $R_i$ erreicht wird. Es handelt es sich um eine Leistungsanpassung. 
+Wird der Belastungsstrom verändert, so verändert sich auch das elektrische Verhalten der Quelle. Der Innenwiderstand wird hierbei als eine differentielle Größe betrachtet:
+\begin{equation}
+	R_\text{i} = \frac{dU_\text{k}}{dI}
+\end{equation}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

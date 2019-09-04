@@ -1,0 +1,72 @@
+\section{Zielsetzung}
+Im Folgenden werden die verschiedenen Scan-Verfahren und das damit verbundene Auflösungsvermögen untersucht.
+Außerdem soll die Sonographie als Diagnosemethode an einem speziellen Beispiel untersucht werden.
+
+\section{Theorie}
+Der Ultraschall erstreckt sich in einem Frequenzbereich von $\SI{20}{kHz}$ bis $\SI{1}{GHz}$.
+Unterhalb dieses Bereichs liegt der hörbare Bereich für Menschen und unter $\SI{20}{Hz}$ der Infraschallbereich.
+Oberhalb des Bereichs liegt der Hyperschallbereich.
+
+Au\ss{}erdem breitet sich Schall parallel zur Bewegungsrichtung aus und ist somit eine longitudinale Welle der Form
+\begin{equation}
+    p(x,t) = p_0 + v_0 Z cos(\omega t - kx), \notag
+\end{equation}
+wobei $Z$ die akustische Impedanz darstellt, die das Produkt aus der Dichte des Mediums und der Schallgeschwindigkeit im Medium, in dem sich die Welle fortbewegt, ist.
+Des Weiteren sorgen Druckschwankungen für die Ausbreitung der Welle.
+Diese Theorie gilt für Gase und Flü\ss{}igkeiten, wobei sich für Flü\ss{}igkeiten eine Schallgeschwindigkeit von
+\begin{equation}
+    \label{eq:1}
+    c_\text{Fl} = \sqrt{\frac{1}{\kappa \rho}}
+\end{equation}
+einstellt, wobei $\kappa$ die Kompressibilität darstellt.
+
+In Festkörpern breiten sich durch Schubspannungen neben den longitudinalen Wellen auch transversale Wellen aus.
+Dadurch ergibt sich für die Schallgeschwindigkeit in einem Festkörper
+\begin{equation}
+    \label{eq:2}
+    c_\text{Fe} = \sqrt{\frac{E}{\rho}},
+\end{equation}
+wobei $E$ das Elastizitätsmodul ist.
+
+Ein weiter Aspekt der Schallausbreitung ist, dass die Schallwellen durch Absorption teilweise Energie abgeben, womit auch die Anfangsintensität $I_0$ nach
+\begin{equation}
+    I (x) = I_0 \cdot e^{- \alpha x}  \notag
+\end{equation}
+abnimmt.
+Dabei ist $\alpha$ der Absorptionskoeffizient der Schallamplitude.
+
+Darüber hinaus kommt es an Grenzflächen von zwei verschiedenen Medien zur Reflexion und Transmission der Schallwellen.
+Dabei wird über die akustischen Impedanzen der beiden angrenzenden Medien der Relexionskoeffizient nach
+\begin{equation}
+    R = \left(\frac{Z_1 - Z_2}{Z_1 + Z_2} \right)^2 \notag
+\end{equation}
+berechnet, wobei der Transmissionskoeffizient dann $T = 1- R$ beträgt.
+
+Bei der Erzeugung von Ultraschall werden Kristalle wie Quarze verwendet und zu Schwingungen angeregt.
+Beim reziproken piezo-elektrischen Effekt wird ein piezoelektrischer Kristall in ein elektrisches Wechselfeld gebracht, sodass dieser zum Schwingen angeregt wird.
+Dabei werden Ultraschallwellen ausgesendet, die bei der Resonanzfrequenz des Kristalls hohe Schwingungsamplituden aufweisen.
+Darüber hinaus können die Kristalle auch als Schallempfänger verwendet werden, indem Schallwellen auf sie gerichtet werden und die Kristalle dadurch zum Schwingen angeregt werden.
+
+Es werden zwei Methoden in der Ultraschalltechnik verwendet, die in Abbildung \ref{fig:1} dargestellt sind.
+\begin{figure}[h]
+    \centering
+    \includegraphics[height=11cm]{Theorie/Verfahren.pdf}
+    \caption{Prinzipieller Versuchsaufbau. \cite{US2}}
+    \label{fig:1}
+\end{figure}
+
+Das Durchschallungsverfahren beschreibt die Technik, bei der auf der einen Seite der Probe der Sender und auf der anderen Seite der Empfänger angebracht werden.
+So kann bestimmt werden, ob sich eine Fehlstelle in der Probe befindet, da am Empfänger eine abgeschwächte Intensität gemessen wird.
+Dabei kann der Ort der Fehlstelle aber nicht genau bestimmt werden.
+Das Impuls-Echo-Verfahren beschreibt die Messtechnik, bei der der Sender und Empfänger auf der gleichen Seite angebracht werden.
+Dabei werden die ausgesendeten Ultraschallwellen an Fehlstellen reflektiert und es kann durch die Laufzeitbestimmung nach 
+\begin{equation}
+    \label{eq:3}
+    s = \frac{1}{2} c t
+\end{equation}
+der genaue Ort der Fehlstelle bestimmen.
+
+Dazu kommt, dass es drei verschiedene Darstellungsarten der Laufzeitdiagramme gibt.
+Beim A-Scan oder auch Amplituden-Scan werden die Echoamplituden des ausgesendeten Signals in Abhängigkeit der Laufzeit dargestellt.
+Der B-Scan oder auch Brightness-Scan ist ein zweidimensionales Bild der Echoamplituden in Helligkeitsabstufungen.
+Der TM-Scan oder auch Time-Motion-Scan kann eine zeitliche Bildfolge aufnehmen, durch das auch Bewegungen eine Organes sichtbar gemacht werden können.
