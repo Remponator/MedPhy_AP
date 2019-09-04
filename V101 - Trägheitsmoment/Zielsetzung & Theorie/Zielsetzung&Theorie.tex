@@ -1,0 +1,73 @@
+\documentclass{scrartcl}
+
+\usepackage[aux]{rerunfilecheck}
+
+\usepackage{fontspec}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathtools}
+
+\usepackage[
+	math-style=ISO,
+	bold-style=ISO,
+	sans-style=italic,
+	nabla=upright,
+	partial=upright,
+]{unicode-math}
+\setmathfont{Latin Modern Math}
+
+
+\usepackage{polyglossia}
+\setmainlanguage{german}
+
+%mehr Pakete hier
+
+\usepackage[unicode]{hyperref}
+\usepackage{bookmark}
+%Einstellung hier, z.B. Fonts
+
+\begin{document}
+\section{Zielsetzung}
+In dem Versuch ’Das Trägheitsmoment’ soll das Trägheitsmoment verschiedener Geometrien und einer Holzpuppe bestimmt werden und der Satz von Steiner bestätigt werden.
+
+\section{Theorie}
+Wird ein drehbarer Körper in Rotations versetzt, so verhält sich dieser träge gegenüber der wirkenden Kraft. Diese Trägheit wird beschrieben durch das Trägheitsmoment $I$. Bei einer punktförmigen Masse ist I definiert als:
+
+\begin{equation}
+	I = mr^2
+\end{equation}
+
+Bei räumlichen Körper ist somit das Trägheitsmoment
+
+\begin{equation}
+	I = \int r^2 dm
+\end{equation}
+
+Für manche geometrischen Körper (z.B. Kugel, Zylinder) gibt es bereits definierte Formeln. Bei komplexeren Körpern müssen diese in einfachere, bekannte Körper zerlegt werden und die Trägheitsmomente schließlich aufaddiert werden.
+
+Nicht immer ist der Schwerpunkt in der Drehachse des Körpers. Ist die Schwerpunktsachse des Körpers parallel zur Drehachse verschoben, so kann der $Satz \, von \, Steiner$ angewendet werden:
+
+\begin{equation}
+	I = I_s+m*a^2
+\end{equation}
+
+$I_s$ ist hierbei das Trägheitsmoment ausgehend von der Schwerpunktachse, $m$ die Gesamtmasse und $a$ der Abstand der beiden Achsen voneinander.
+
+Die auf den Körper wirkende Kraft $\vec{F}$ im Abstand $\vec{r}$ von der Achse wird als Drehmoment $M$ definiert:
+\begin{equation}
+	\vec{M} = \vec{F} \times \vec{r}
+\end{equation}
+
+Kann das System in Schwingung versetzt werden, so wirkt während der Drehung des Körpers (um Winkel $\rho$ aus der Ruhelage), eine rücktreibende Kraft entgegen, im hier vorliegenden Versuch, durch eine Feder hervorgerufen.
+Beim Loslassen des Körpers bewirkt dies eine harmonische Schwingung des Körpers. Die Schwingungsdauer wird hierbei beschrieben durch
+\begin{equation}
+	T = 2\pi\sqrt\frac{I}{D}
+\end{equation}
+
+$D$ ist die sog. Winkelrichtgröße. Mithilfe dieser lässt sich nun das Drehmoment berechnen:
+\begin{equation}
+	M = D*\rho
+\end{equation}
+
+\end{document}
